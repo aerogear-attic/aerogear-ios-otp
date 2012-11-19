@@ -17,6 +17,8 @@
 		81F41E8603F38A15A3D6DE7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F41D8D0107C4A79962F802 /* Foundation.framework */; };
 		81F41EA5818BC731CFB8EBFF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F4153064F1AD8390B46832 /* SenTestingKit.framework */; };
 		81F41EF24351CF2FDE3EAB37 /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* OTPGenerator.m */; };
+		E1F939CF165AA14500C5EB63 /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* TOTPGenerator.m */; };
+		E1F939D1165AA14F00C5EB63 /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* OTPGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F41258F05528DFC3EDD476 /* TOTPGeneratorTests.m in Sources */,
+				E1F939CF165AA14500C5EB63 /* TOTPGenerator.m in Sources */,
+				E1F939D1165AA14F00C5EB63 /* OTPGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
