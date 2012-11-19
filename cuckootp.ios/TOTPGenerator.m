@@ -17,7 +17,6 @@
 //
 
 #import "TOTPGenerator.h"
-#import "GTMDefines.h"
 
 @interface TOTPGenerator ()
 @property(assign, nonatomic, readwrite) NSTimeInterval period;
@@ -39,9 +38,8 @@
                              digits:digits])) {
 
     if (period <= 0 || period > 300) {
-      _GTMDevLog(@"Bad Period: %f", period);
-      [self release];
-      self = nil;
+      NSLog(@"Bad Period");
+        self = nil;
     } else {
       self.period = period;
     }

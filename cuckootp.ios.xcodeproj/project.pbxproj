@@ -9,15 +9,13 @@
 /* Begin PBXBuildFile section */
 		81F411400E888F8F8FC747C3 /* TOTPGenerator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41F70D8A686C1492A99EC /* TOTPGenerator.h */; };
 		81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81F41AE49B44356348304329 /* InfoPlist.strings */; };
-		81F41258F05528DFC3EDD476 /* cuckootp_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F413635101311EA2858A9A /* cuckootp_iosTests.m */; };
-		81F41278E8504356245686E6 /* TOTPGeneratorTest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F4139152179F6154535E57 /* TOTPGeneratorTest.h */; };
+		81F41258F05528DFC3EDD476 /* TOTPGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F413635101311EA2858A9A /* TOTPGeneratorTests.m */; };
 		81F41756774CCFE0E443575E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F41D8D0107C4A79962F802 /* Foundation.framework */; };
 		81F4183B5599B1F00B7404BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F4106D1F3FE8FB17BDE31F /* UIKit.framework */; };
 		81F41877C7A276B7428ADFA7 /* OTPGenerator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41214CF9DDC5E95CC61D0 /* OTPGenerator.h */; };
 		81F41B6CCA6DEFDD3B02DDDB /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* TOTPGenerator.m */; };
 		81F41BBC6DBD02AA190AB480 /* cuckootp_ios.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41ED91F73950A16E3E826 /* cuckootp_ios.h */; };
 		81F41DF42F9D88DC82895559 /* cuckootp_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F416873088066CD47C0BE6 /* cuckootp_ios.m */; };
-		81F41E7D2A11D21295C0185B /* TOTPGeneratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F418384DFCAB08CA9BE4DC /* TOTPGeneratorTest.m */; };
 		81F41E8603F38A15A3D6DE7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F41D8D0107C4A79962F802 /* Foundation.framework */; };
 		81F41EA5818BC731CFB8EBFF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F4153064F1AD8390B46832 /* SenTestingKit.framework */; };
 		81F41EF24351CF2FDE3EAB37 /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* OTPGenerator.m */; };
@@ -43,7 +41,6 @@
 				81F41BBC6DBD02AA190AB480 /* cuckootp_ios.h in CopyFiles */,
 				81F411400E888F8F8FC747C3 /* TOTPGenerator.h in CopyFiles */,
 				81F41877C7A276B7428ADFA7 /* OTPGenerator.h in CopyFiles */,
-				81F41278E8504356245686E6 /* TOTPGeneratorTest.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,14 +49,12 @@
 /* Begin PBXFileReference section */
 		81F4106D1F3FE8FB17BDE31F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F41214CF9DDC5E95CC61D0 /* OTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPGenerator.h; sourceTree = "<group>"; };
-		81F413635101311EA2858A9A /* cuckootp_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cuckootp_iosTests.m; sourceTree = "<group>"; };
-		81F4139152179F6154535E57 /* TOTPGeneratorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTPGeneratorTest.h; sourceTree = "<group>"; };
+		81F413635101311EA2858A9A /* TOTPGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTPGeneratorTests.m; sourceTree = "<group>"; };
 		81F4153064F1AD8390B46832 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		81F41619A751E93404EB6E4B /* TOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTPGenerator.m; sourceTree = "<group>"; };
 		81F41621D94B6B79552689A3 /* libcuckootp.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcuckootp.ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F416873088066CD47C0BE6 /* cuckootp_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cuckootp_ios.m; sourceTree = "<group>"; };
-		81F4170BEB1ECD20F3257CD6 /* cuckootp_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cuckootp_iosTests.h; sourceTree = "<group>"; };
-		81F418384DFCAB08CA9BE4DC /* TOTPGeneratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTPGeneratorTest.m; sourceTree = "<group>"; };
+		81F4170BEB1ECD20F3257CD6 /* TOTPGeneratorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTPGeneratorTests.h; sourceTree = "<group>"; };
 		81F41A09B543FA84D4F3E6FF /* OTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPGenerator.m; sourceTree = "<group>"; };
 		81F41A339F6C8F87B8839281 /* cuckootp.ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cuckootp.ios-Prefix.pch"; sourceTree = "<group>"; };
 		81F41A9BDB3BA0CCB64675D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -96,10 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				81F41B5BE5FFADC666E61AA4 /* Supporting Files */,
-				81F4170BEB1ECD20F3257CD6 /* cuckootp_iosTests.h */,
-				81F413635101311EA2858A9A /* cuckootp_iosTests.m */,
-				81F418384DFCAB08CA9BE4DC /* TOTPGeneratorTest.m */,
-				81F4139152179F6154535E57 /* TOTPGeneratorTest.h */,
+				81F4170BEB1ECD20F3257CD6 /* TOTPGeneratorTests.h */,
+				81F413635101311EA2858A9A /* TOTPGeneratorTests.m */,
 			);
 			path = cuckootp.iosTests;
 			sourceTree = "<group>";
@@ -258,7 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F41258F05528DFC3EDD476 /* cuckootp_iosTests.m in Sources */,
+				81F41258F05528DFC3EDD476 /* TOTPGeneratorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +262,6 @@
 				81F41DF42F9D88DC82895559 /* cuckootp_ios.m in Sources */,
 				81F41B6CCA6DEFDD3B02DDDB /* TOTPGenerator.m in Sources */,
 				81F41EF24351CF2FDE3EAB37 /* OTPGenerator.m in Sources */,
-				81F41E7D2A11D21295C0185B /* TOTPGeneratorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
