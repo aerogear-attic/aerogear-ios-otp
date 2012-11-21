@@ -1,5 +1,5 @@
 //
-//  TOTPGenerator.h
+//  Totp.h
 //
 //  Copyright 2011 Google Inc.
 //
@@ -17,9 +17,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OTPGenerator.h"
+#import "Otp.h"
 
-// The TOTPGenerator class generates a one-time password (OTP) using
+// The Totp class generates a one-time password (OTP) using
 // the Time-based One-time Password Algorithm described in:
 // http://tools.ietf.org/html/draft-mraihi-totp-timebased
 //
@@ -36,23 +36,15 @@
 // - T0 is the Unix time to start counting time steps (default value is
 //   0, Unix epoch) and is also a system parameter.
 //
-@interface TOTPGenerator : OTPGenerator
-
-// The period to use when calculating the counter.
-@property(assign, nonatomic, readonly) NSTimeInterval period;
-
-+ (NSTimeInterval)defaultPeriod;
+@interface Totp : Otp
 
 // Designated initializer.
-- (id)initWithSecret:(NSData *)secret
-           algorithm:(NSString *)algorithm
-              digits:(NSUInteger)digits
-              period:(NSTimeInterval)period;
+- (id)initWithSecret:(NSData *)secret;
 
 // Instance method to generate an OTP using the |algorithm|, |secret|,
 // |digits|, |period| and |now| values configured on the object.
 // The return value is an NSString of |digits| length, with leading
 // zero-padding as required.
-- (NSString *)generateOTPForDate:(NSDate *)date;
+- (NSString *)now:(NSDate *)date;
 
 @end
