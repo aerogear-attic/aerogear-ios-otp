@@ -49,7 +49,6 @@
 @property (readonly, nonatomic) NSUInteger digits;
 
 // Some default values.
-+ (NSString *)defaultAlgorithm;
 + (NSUInteger)defaultDigits;
 
 // Designated initializer.
@@ -71,5 +70,3 @@
 - (NSString *)generateOTP;
 
 @end
-
-extern NSString *const kOTPGeneratorSHA1Algorithm;

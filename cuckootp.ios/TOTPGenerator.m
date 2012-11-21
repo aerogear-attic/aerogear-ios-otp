@@ -18,29 +18,18 @@
 
 #import "TOTPGenerator.h"
 
+const UInt32 defaultInterval = 30;
+
 @interface TOTPGenerator ()
-@property(assign, nonatomic, readwrite) NSTimeInterval period;
+
 @end
 
 @implementation TOTPGenerator
-@synthesize period = period_;
-
-+ (NSTimeInterval)defaultPeriod {
-  return 30;
-}
 
 - (id)initWithSecret:(NSData *)secret
-              digits:(NSUInteger)digits
-              period:(NSTimeInterval)period {
+              digits:(NSUInteger)digits {
   if ((self = [super initWithSecret:secret
                              digits:digits])) {
-
-    if (period <= 0 || period > 300) {
-      NSLog(@"Bad Period");
-        self = nil;
-    } else {
-      self.period = period;
-    }
   }
   return self;
 }
@@ -56,7 +45,7 @@
   }
 
   NSTimeInterval seconds = [date timeIntervalSince1970];
-  uint64_t counter = (uint64_t)(seconds / self.period);
+  uint64_t counter = (uint64_t)(seconds / defaultInterval);
   return [super generateOTPForCounter:counter];
 }
 

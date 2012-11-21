@@ -43,8 +43,7 @@
 
         TOTPGenerator *generator
                 = [[TOTPGenerator alloc] initWithSecret:secretData
-                                                 digits:6
-                                                 period:30];
+                                                 digits:6];
 
         NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervals[i]];
 

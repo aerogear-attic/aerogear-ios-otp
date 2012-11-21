@@ -38,15 +38,9 @@
 //
 @interface TOTPGenerator : OTPGenerator
 
-// The period to use when calculating the counter.
-@property(assign, nonatomic, readonly) NSTimeInterval period;
-
-+ (NSTimeInterval)defaultPeriod;
-
 // Designated initializer.
 - (id)initWithSecret:(NSData *)secret
-              digits:(NSUInteger)digits
-              period:(NSTimeInterval)period;
+              digits:(NSUInteger)digits;
 
 // Instance method to generate an OTP using the |algorithm|, |secret|,
 // |digits|, |period| and |now| values configured on the object.
