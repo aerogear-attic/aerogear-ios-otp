@@ -70,10 +70,7 @@ NSString *const kOTPGeneratorSHAMD5Algorithm = @"MD5";
     digits_ = digits;
 
     BOOL goodAlgorithm
-      = ([algorithm isEqualToString:kOTPGeneratorSHA1Algorithm] ||
-         [algorithm isEqualToString:kOTPGeneratorSHA256Algorithm] ||
-         [algorithm isEqualToString:kOTPGeneratorSHA512Algorithm] ||
-         [algorithm isEqualToString:kOTPGeneratorSHAMD5Algorithm]);
+      = ([algorithm isEqualToString:kOTPGeneratorSHA1Algorithm]);
     if (!goodAlgorithm || digits_ > 8 || digits_ < 6 || !secret_) {
         NSLog(@"Bad args digits(min 6, max 8)");
         self = nil;
@@ -99,15 +96,6 @@ NSString *const kOTPGeneratorSHAMD5Algorithm = @"MD5";
   if ([algorithm_ isEqualToString:kOTPGeneratorSHA1Algorithm]) {
     alg = kCCHmacAlgSHA1;
     hashLength = CC_SHA1_DIGEST_LENGTH;
-  } else if ([algorithm_ isEqualToString:kOTPGeneratorSHA256Algorithm]) {
-    alg = kCCHmacAlgSHA256;
-    hashLength = CC_SHA256_DIGEST_LENGTH;
-  } else if ([algorithm_ isEqualToString:kOTPGeneratorSHA512Algorithm]) {
-    alg = kCCHmacAlgSHA512;
-    hashLength = CC_SHA512_DIGEST_LENGTH;
-  } else if ([algorithm_ isEqualToString:kOTPGeneratorSHAMD5Algorithm]) {
-    alg = kCCHmacAlgMD5;
-    hashLength = CC_MD5_DIGEST_LENGTH;
   } else {
     NSLog(@"Unknown algorithm");
     return nil;
