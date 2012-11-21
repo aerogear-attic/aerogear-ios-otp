@@ -47,7 +47,7 @@
         NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervals[i]];
 
         STAssertEqualObjects([results objectAtIndex:j],
-        [generator generateOTPForDate:date],
+        [generator now:date],
         @"Invalid result %d, %@", i, date);
         j = j + 1;
     }

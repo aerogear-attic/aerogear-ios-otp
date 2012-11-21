@@ -33,10 +33,10 @@ const NSUInteger defaultInterval = 30;
 }
 
 - (NSString *)generateOTP {
-  return [self generateOTPForDate:[NSDate date]];
+  return [self now:[NSDate date]];
 }
 
-- (NSString *)generateOTPForDate:(NSDate *)date {
+- (NSString *)now:(NSDate *)date {
   if (!date) {
     // If no now date specified, use the current date.
     date = [NSDate date];
