@@ -20,17 +20,12 @@
 
 #import <CommonCrypto/CommonHMAC.h>
 
-static NSUInteger kPinModTable[] = {
-  0,
-  10,
-  100,
-  1000,
-  10000,
-  100000,
-  1000000,
-  10000000,
-  100000000,
-};
+typedef enum {
+    SIX   = 1000000,
+    SEVEN = 10000000,
+    EIGHT = 100000000,
+} Digits;
+
 
 const NSUInteger defaultDigits = 6;
 
@@ -82,7 +77,7 @@ const NSUInteger defaultDigits = 6;
   unsigned char offset = ptr[hashLength-1] & 0x0f;
   unsigned long truncatedHash =
     NSSwapBigLongToHost(*((unsigned long *)&ptr[offset])) & 0x7fffffff;
-  unsigned long pinValue = truncatedHash % kPinModTable[defaultDigits];
+  unsigned long pinValue = truncatedHash % SIX;
 
   return [NSString stringWithFormat:@"%0*ld", defaultDigits, pinValue];
 }
