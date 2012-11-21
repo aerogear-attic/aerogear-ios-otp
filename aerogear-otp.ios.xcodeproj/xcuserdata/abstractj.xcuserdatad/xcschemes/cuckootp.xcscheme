@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F41B0DE92C2117AB2F5685"
-               BuildableName = "cuckootp.iosTests.octest"
-               BlueprintName = "cuckootp.iosTests"
-               ReferencedContainer = "container:cuckootp.ios.xcodeproj">
+               BuildableName = "aerogear-otp.iosTests.octest"
+               BlueprintName = "aerogear-otp.iosTests"
+               ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F41B0DE92C2117AB2F5685"
-               BuildableName = "cuckootp.iosTests.octest"
-               BlueprintName = "cuckootp.iosTests"
-               ReferencedContainer = "container:cuckootp.ios.xcodeproj">
+               BuildableName = "aerogear-otp.iosTests.octest"
+               BlueprintName = "aerogear-otp.iosTests"
+               ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

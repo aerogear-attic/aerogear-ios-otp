@@ -27,7 +27,7 @@
 			containerPortal = 81F411BA5904484694D442E0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 81F412E1D1AC3AA31388DBC2;
-			remoteInfo = cuckootp.ios;
+			remoteInfo = aerogear-otp.ios;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,13 +51,13 @@
 		81F413635101311EA2858A9A /* TotpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotpTests.m; sourceTree = "<group>"; };
 		81F4153064F1AD8390B46832 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		81F41619A751E93404EB6E4B /* Totp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Totp.m; sourceTree = "<group>"; };
-		81F41621D94B6B79552689A3 /* libcuckootp.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcuckootp.ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F41621D94B6B79552689A3 /* libaerogear-otp.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libaerogear-otp.ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F41A09B543FA84D4F3E6FF /* Otp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Otp.m; sourceTree = "<group>"; };
-		81F41A339F6C8F87B8839281 /* cuckootp.ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cuckootp.ios-Prefix.pch"; sourceTree = "<group>"; };
+		81F41A339F6C8F87B8839281 /* aerogear-otp.ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aerogear-otp.ios-Prefix.pch"; sourceTree = "<group>"; };
 		81F41A9BDB3BA0CCB64675D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		81F41C79681C1E7FC6E18233 /* cuckootp.iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "cuckootp.iosTests-Info.plist"; sourceTree = "<group>"; };
+		81F41C79681C1E7FC6E18233 /* aerogear-otp.iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aerogear-otp.iosTests-Info.plist"; sourceTree = "<group>"; };
 		81F41D8D0107C4A79962F802 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		81F41DAAA0F339CAA4A45113 /* cuckootp.iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cuckootp.iosTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F41DAAA0F339CAA4A45113 /* aerogear-otp.iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aerogear-otp.iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F41F70D8A686C1492A99EC /* Totp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Totp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,25 +83,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		81F41388A888F2535026DDEE /* cuckootp.iosTests */ = {
+		81F41388A888F2535026DDEE /* aerogear-otp.iosTests */ = {
 			isa = PBXGroup;
 			children = (
 				81F41B5BE5FFADC666E61AA4 /* Supporting Files */,
 				81F413635101311EA2858A9A /* TotpTests.m */,
 			);
-			path = cuckootp.iosTests;
+			name = "aerogear-otp.iosTests";
+			path = aerogear-otp.iosTests;
 			sourceTree = "<group>";
 		};
 		81F415AECDD9C8C189F9DF76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81F41621D94B6B79552689A3 /* libcuckootp.ios.a */,
-				81F41DAAA0F339CAA4A45113 /* cuckootp.iosTests.octest */,
+				81F41621D94B6B79552689A3 /* libaerogear-otp.ios.a */,
+				81F41DAAA0F339CAA4A45113 /* aerogear-otp.iosTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81F41A4F242A5F3F8A0988CD /* cuckootp.ios */ = {
+		81F41A4F242A5F3F8A0988CD /* aerogear-otp.ios */ = {
 			isa = PBXGroup;
 			children = (
 				81F41CDC9BA237C5509D7034 /* Supporting Files */,
@@ -110,13 +111,14 @@
 				81F41214CF9DDC5E95CC61D0 /* Otp.h */,
 				81F41A09B543FA84D4F3E6FF /* Otp.m */,
 			);
-			path = cuckootp.ios;
+			name = "aerogear-otp.ios";
+			path = aerogear-otp.ios;
 			sourceTree = "<group>";
 		};
 		81F41B5BE5FFADC666E61AA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				81F41C79681C1E7FC6E18233 /* cuckootp.iosTests-Info.plist */,
+				81F41C79681C1E7FC6E18233 /* aerogear-otp.iosTests-Info.plist */,
 				81F41AE49B44356348304329 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -127,15 +129,15 @@
 			children = (
 				81F415AECDD9C8C189F9DF76 /* Products */,
 				81F41D392730CBCAA494FACD /* Frameworks */,
-				81F41A4F242A5F3F8A0988CD /* cuckootp.ios */,
-				81F41388A888F2535026DDEE /* cuckootp.iosTests */,
+				81F41A4F242A5F3F8A0988CD /* aerogear-otp.ios */,
+				81F41388A888F2535026DDEE /* aerogear-otp.iosTests */,
 			);
 			sourceTree = "<group>";
 		};
 		81F41CDC9BA237C5509D7034 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				81F41A339F6C8F87B8839281 /* cuckootp.ios-Prefix.pch */,
+				81F41A339F6C8F87B8839281 /* aerogear-otp.ios-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		81F412E1D1AC3AA31388DBC2 /* cuckootp.ios */ = {
+		81F412E1D1AC3AA31388DBC2 /* aerogear-otp.ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81F4129254F03A22F986AA87 /* Build configuration list for PBXNativeTarget "cuckootp.ios" */;
+			buildConfigurationList = 81F4129254F03A22F986AA87 /* Build configuration list for PBXNativeTarget "aerogear-otp.ios" */;
 			buildPhases = (
 				81F41936F323608E71AAF41D /* Sources */,
 				81F419E2DE82351CAF39B84B /* Frameworks */,
@@ -165,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = cuckootp.ios;
-			productName = cuckootp.ios;
-			productReference = 81F41621D94B6B79552689A3 /* libcuckootp.ios.a */;
+			name = "aerogear-otp.ios";
+			productName = aerogear-otp.ios;
+			productReference = 81F41621D94B6B79552689A3 /* libaerogear-otp.ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		81F41B0DE92C2117AB2F5685 /* cuckootp.iosTests */ = {
+		81F41B0DE92C2117AB2F5685 /* aerogear-otp.iosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81F4170EC4C2307C435655A3 /* Build configuration list for PBXNativeTarget "cuckootp.iosTests" */;
+			buildConfigurationList = 81F4170EC4C2307C435655A3 /* Build configuration list for PBXNativeTarget "aerogear-otp.iosTests" */;
 			buildPhases = (
 				81F41371A9713B70DC19ED87 /* Sources */,
 				81F416E3494E87BD1B604831 /* Frameworks */,
@@ -184,9 +186,9 @@
 			dependencies = (
 				81F41B220FACB32A3BFE2685 /* PBXTargetDependency */,
 			);
-			name = cuckootp.iosTests;
-			productName = cuckootp.iosTests;
-			productReference = 81F41DAAA0F339CAA4A45113 /* cuckootp.iosTests.octest */;
+			name = "aerogear-otp.iosTests";
+			productName = aerogear-otp.iosTests;
+			productReference = 81F41DAAA0F339CAA4A45113 /* aerogear-otp.iosTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +199,7 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 			};
-			buildConfigurationList = 81F4135C0429595CE78B95FB /* Build configuration list for PBXProject "cuckootp.ios" */;
+			buildConfigurationList = 81F4135C0429595CE78B95FB /* Build configuration list for PBXProject "aerogear-otp.ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -209,8 +211,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81F412E1D1AC3AA31388DBC2 /* cuckootp.ios */,
-				81F41B0DE92C2117AB2F5685 /* cuckootp.iosTests */,
+				81F412E1D1AC3AA31388DBC2 /* aerogear-otp.ios */,
+				81F41B0DE92C2117AB2F5685 /* aerogear-otp.iosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,7 +269,7 @@
 /* Begin PBXTargetDependency section */
 		81F41B220FACB32A3BFE2685 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 81F412E1D1AC3AA31388DBC2 /* cuckootp.ios */;
+			target = 81F412E1D1AC3AA31388DBC2 /* aerogear-otp.ios */;
 			targetProxy = 81F41D3442F738087AC13E89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -292,9 +294,9 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cuckootp.ios/cuckootp.ios-Prefix.pch";
-				INFOPLIST_FILE = "cuckootp.iosTests/cuckootp.iosTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
+				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
+				PRODUCT_NAME = "aerogear-otp.iosTests";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -302,11 +304,11 @@
 		81F41B18288687AEA611B763 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/cuckootp_ios.dst;
+				DSTROOT = /tmp/aerogear-otp.ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cuckootp.ios/cuckootp.ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "aerogear-otp.ios";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -362,11 +364,11 @@
 		81F41CDD33B46BB878AA9624 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/cuckootp_ios.dst;
+				DSTROOT = /tmp/aerogear-otp.ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cuckootp.ios/cuckootp.ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "aerogear-otp.ios";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -379,9 +381,9 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cuckootp.ios/cuckootp.ios-Prefix.pch";
-				INFOPLIST_FILE = "cuckootp.iosTests/cuckootp.iosTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
+				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
+				PRODUCT_NAME = "aerogear-otp.iosTests";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -389,7 +391,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81F4129254F03A22F986AA87 /* Build configuration list for PBXNativeTarget "cuckootp.ios" */ = {
+		81F4129254F03A22F986AA87 /* Build configuration list for PBXNativeTarget "aerogear-otp.ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81F41CDD33B46BB878AA9624 /* Release */,
@@ -398,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81F4135C0429595CE78B95FB /* Build configuration list for PBXProject "cuckootp.ios" */ = {
+		81F4135C0429595CE78B95FB /* Build configuration list for PBXProject "aerogear-otp.ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81F41B860976BAB0FFA95788 /* Release */,
@@ -407,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81F4170EC4C2307C435655A3 /* Build configuration list for PBXNativeTarget "cuckootp.iosTests" */ = {
+		81F4170EC4C2307C435655A3 /* Build configuration list for PBXNativeTarget "aerogear-otp.iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81F410AF524515CE7BC278A9 /* Release */,

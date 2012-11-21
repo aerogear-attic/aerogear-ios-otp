@@ -15,16 +15,16 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F412E1D1AC3AA31388DBC2"
-               BuildableName = "libcuckootp.ios.a"
-               BlueprintName = "cuckootp.ios"
-               ReferencedContainer = "container:cuckootp.ios.xcodeproj">
+               BuildableName = "libaerogear-otp.ios.a"
+               BlueprintName = "aerogear-otp.ios"
+               ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F41B0DE92C2117AB2F5685"
-               BuildableName = "cuckootp.iosTests.octest"
-               BlueprintName = "cuckootp.iosTests"
-               ReferencedContainer = "container:cuckootp.ios.xcodeproj">
+               BuildableName = "aerogear-otp.iosTests.octest"
+               BlueprintName = "aerogear-otp.iosTests"
+               ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

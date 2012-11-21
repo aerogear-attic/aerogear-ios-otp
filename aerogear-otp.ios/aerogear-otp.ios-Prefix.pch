@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'cuckootp.ios' target in the 'aerogear-otp.ios' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+
+#endif
