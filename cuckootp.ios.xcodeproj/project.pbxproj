@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81F411400E888F8F8FC747C3 /* TOTPGenerator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41F70D8A686C1492A99EC /* TOTPGenerator.h */; };
+		81F411400E888F8F8FC747C3 /* Totp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41F70D8A686C1492A99EC /* Totp.h */; };
 		81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81F41AE49B44356348304329 /* InfoPlist.strings */; };
-		81F41258F05528DFC3EDD476 /* TOTPGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F413635101311EA2858A9A /* TOTPGeneratorTests.m */; };
+		81F41258F05528DFC3EDD476 /* TotpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F413635101311EA2858A9A /* TotpTests.m */; };
 		81F41756774CCFE0E443575E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F41D8D0107C4A79962F802 /* Foundation.framework */; };
 		81F4183B5599B1F00B7404BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F4106D1F3FE8FB17BDE31F /* UIKit.framework */; };
-		81F41877C7A276B7428ADFA7 /* OTPGenerator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41214CF9DDC5E95CC61D0 /* OTPGenerator.h */; };
-		81F41B6CCA6DEFDD3B02DDDB /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* TOTPGenerator.m */; };
+		81F41877C7A276B7428ADFA7 /* Otp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41214CF9DDC5E95CC61D0 /* Otp.h */; };
+		81F41B6CCA6DEFDD3B02DDDB /* Totp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* Totp.m */; };
 		81F41E8603F38A15A3D6DE7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F41D8D0107C4A79962F802 /* Foundation.framework */; };
 		81F41EA5818BC731CFB8EBFF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F4153064F1AD8390B46832 /* SenTestingKit.framework */; };
-		81F41EF24351CF2FDE3EAB37 /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* OTPGenerator.m */; };
-		E1F939CF165AA14500C5EB63 /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* TOTPGenerator.m */; };
-		E1F939D1165AA14F00C5EB63 /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* OTPGenerator.m */; };
+		81F41EF24351CF2FDE3EAB37 /* Otp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* Otp.m */; };
+		E1F939CF165AA14500C5EB63 /* Totp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* Totp.m */; };
+		E1F939D1165AA14F00C5EB63 /* Otp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* Otp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				81F411400E888F8F8FC747C3 /* TOTPGenerator.h in CopyFiles */,
-				81F41877C7A276B7428ADFA7 /* OTPGenerator.h in CopyFiles */,
+				81F411400E888F8F8FC747C3 /* Totp.h in CopyFiles */,
+				81F41877C7A276B7428ADFA7 /* Otp.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,18 +47,18 @@
 
 /* Begin PBXFileReference section */
 		81F4106D1F3FE8FB17BDE31F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		81F41214CF9DDC5E95CC61D0 /* OTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPGenerator.h; sourceTree = "<group>"; };
-		81F413635101311EA2858A9A /* TOTPGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTPGeneratorTests.m; sourceTree = "<group>"; };
+		81F41214CF9DDC5E95CC61D0 /* Otp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Otp.h; sourceTree = "<group>"; };
+		81F413635101311EA2858A9A /* TotpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotpTests.m; sourceTree = "<group>"; };
 		81F4153064F1AD8390B46832 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		81F41619A751E93404EB6E4B /* TOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTPGenerator.m; sourceTree = "<group>"; };
+		81F41619A751E93404EB6E4B /* Totp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Totp.m; sourceTree = "<group>"; };
 		81F41621D94B6B79552689A3 /* libcuckootp.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcuckootp.ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		81F41A09B543FA84D4F3E6FF /* OTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPGenerator.m; sourceTree = "<group>"; };
+		81F41A09B543FA84D4F3E6FF /* Otp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Otp.m; sourceTree = "<group>"; };
 		81F41A339F6C8F87B8839281 /* cuckootp.ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cuckootp.ios-Prefix.pch"; sourceTree = "<group>"; };
 		81F41A9BDB3BA0CCB64675D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		81F41C79681C1E7FC6E18233 /* cuckootp.iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "cuckootp.iosTests-Info.plist"; sourceTree = "<group>"; };
 		81F41D8D0107C4A79962F802 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		81F41DAAA0F339CAA4A45113 /* cuckootp.iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cuckootp.iosTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		81F41F70D8A686C1492A99EC /* TOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTPGenerator.h; sourceTree = "<group>"; };
+		81F41F70D8A686C1492A99EC /* Totp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Totp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				81F41B5BE5FFADC666E61AA4 /* Supporting Files */,
-				81F413635101311EA2858A9A /* TOTPGeneratorTests.m */,
+				81F413635101311EA2858A9A /* TotpTests.m */,
 			);
 			path = cuckootp.iosTests;
 			sourceTree = "<group>";
@@ -105,10 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				81F41CDC9BA237C5509D7034 /* Supporting Files */,
-				81F41F70D8A686C1492A99EC /* TOTPGenerator.h */,
-				81F41619A751E93404EB6E4B /* TOTPGenerator.m */,
-				81F41214CF9DDC5E95CC61D0 /* OTPGenerator.h */,
-				81F41A09B543FA84D4F3E6FF /* OTPGenerator.m */,
+				81F41F70D8A686C1492A99EC /* Totp.h */,
+				81F41619A751E93404EB6E4B /* Totp.m */,
+				81F41214CF9DDC5E95CC61D0 /* Otp.h */,
+				81F41A09B543FA84D4F3E6FF /* Otp.m */,
 			);
 			path = cuckootp.ios;
 			sourceTree = "<group>";
@@ -247,9 +247,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F41258F05528DFC3EDD476 /* TOTPGeneratorTests.m in Sources */,
-				E1F939CF165AA14500C5EB63 /* TOTPGenerator.m in Sources */,
-				E1F939D1165AA14F00C5EB63 /* OTPGenerator.m in Sources */,
+				81F41258F05528DFC3EDD476 /* TotpTests.m in Sources */,
+				E1F939CF165AA14500C5EB63 /* Totp.m in Sources */,
+				E1F939D1165AA14F00C5EB63 /* Otp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F41B6CCA6DEFDD3B02DDDB /* TOTPGenerator.m in Sources */,
-				81F41EF24351CF2FDE3EAB37 /* OTPGenerator.m in Sources */,
+				81F41B6CCA6DEFDD3B02DDDB /* Totp.m in Sources */,
+				81F41EF24351CF2FDE3EAB37 /* Otp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
