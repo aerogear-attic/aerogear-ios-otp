@@ -18,7 +18,7 @@
 
 #import "TOTPGenerator.h"
 
-const UInt32 defaultInterval = 30;
+const NSUInteger defaultInterval = 30;
 
 @interface TOTPGenerator ()
 
@@ -26,10 +26,8 @@ const UInt32 defaultInterval = 30;
 
 @implementation TOTPGenerator
 
-- (id)initWithSecret:(NSData *)secret
-              digits:(NSUInteger)digits {
-  if ((self = [super initWithSecret:secret
-                             digits:digits])) {
+- (id)initWithSecret:(NSData *)secret {
+  if ((self = [super initWithSecret:secret])) {
   }
   return self;
 }

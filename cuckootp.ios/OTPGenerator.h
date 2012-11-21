@@ -46,14 +46,9 @@
 @interface OTPGenerator : NSObject
 
 @property (readonly, nonatomic, copy) NSData *secret;
-@property (readonly, nonatomic) NSUInteger digits;
-
-// Some default values.
-+ (NSUInteger)defaultDigits;
 
 // Designated initializer.
-- (id)initWithSecret:(NSData *)secret
-              digits:(NSUInteger)digits;
+- (id)initWithSecret:(NSData *)secret;
 
 
 // Instance method to generate an OTP using the |algorithm|, |secret|,

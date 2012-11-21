@@ -39,8 +39,7 @@
 @interface TOTPGenerator : OTPGenerator
 
 // Designated initializer.
-- (id)initWithSecret:(NSData *)secret
-              digits:(NSUInteger)digits;
+- (id)initWithSecret:(NSData *)secret;
 
 // Instance method to generate an OTP using the |algorithm|, |secret|,
 // |digits|, |period| and |now| values configured on the object.

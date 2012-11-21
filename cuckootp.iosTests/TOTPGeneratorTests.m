@@ -42,8 +42,7 @@
     for (size_t i = 0, j = 0; i < sizeof(intervals) / sizeof(*intervals); i++) {
 
         TOTPGenerator *generator
-                = [[TOTPGenerator alloc] initWithSecret:secretData
-                                                 digits:6];
+                = [[TOTPGenerator alloc] initWithSecret:secretData];
 
         NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervals[i]];
 

@@ -32,34 +32,24 @@ static NSUInteger kPinModTable[] = {
   100000000,
 };
 
+const NSUInteger defaultDigits = 6;
+
 @interface OTPGenerator ()
 @property (readwrite, nonatomic, copy) NSData *secret;
 @end
 
 @implementation OTPGenerator
 
-+ (NSUInteger)defaultDigits {
-  return 6;
-}
-
 @synthesize secret = secret_;
-@synthesize digits = digits_;
 
 - (id)init {
   [self doesNotRecognizeSelector:_cmd];
   return nil;
 }
 
-- (id)initWithSecret:(NSData *)secret
-              digits:(NSUInteger)digits {
+- (id)initWithSecret:(NSData *)secret {
   if ((self = [super init])) {
     secret_ = [secret copy];
-    digits_ = digits;
-
-    if (digits_ > 8 || digits_ < 6 || !secret_) {
-        NSLog(@"Bad args digits(min 6, max 8)");
-        self = nil;
-    }
   }
   return self;
 }
@@ -92,9 +82,9 @@ static NSUInteger kPinModTable[] = {
   unsigned char offset = ptr[hashLength-1] & 0x0f;
   unsigned long truncatedHash =
     NSSwapBigLongToHost(*((unsigned long *)&ptr[offset])) & 0x7fffffff;
-  unsigned long pinValue = truncatedHash % kPinModTable[digits_];
+  unsigned long pinValue = truncatedHash % kPinModTable[defaultDigits];
 
-  return [NSString stringWithFormat:@"%0*ld", digits_, pinValue];
+  return [NSString stringWithFormat:@"%0*ld", defaultDigits, pinValue];
 }
 
 @end
