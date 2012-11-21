@@ -16,7 +16,7 @@
 //  the License.
 //
 
-#import "OTPGenerator.h"
+#import "Otp.h"
 
 #import <CommonCrypto/CommonHMAC.h>
 
@@ -34,11 +34,11 @@ static NSUInteger kPinModTable[] = {
 
 const NSUInteger defaultDigits = 6;
 
-@interface OTPGenerator ()
+@interface Otp ()
 @property (readwrite, nonatomic, copy) NSData *secret;
 @end
 
-@implementation OTPGenerator
+@implementation Otp
 
 @synthesize secret = secret_;
 

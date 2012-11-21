@@ -1,5 +1,5 @@
 //
-//  TOTPGenerator.m
+//  Totp.m
 //
 //  Copyright 2011 Google Inc.
 //
@@ -16,15 +16,15 @@
 //  the License.
 //
 
-#import "TOTPGenerator.h"
+#import "Totp.h"
 
 const NSUInteger defaultInterval = 30;
 
-@interface TOTPGenerator ()
+@interface Totp ()
 
 @end
 
-@implementation TOTPGenerator
+@implementation Totp
 
 - (id)initWithSecret:(NSData *)secret {
   if ((self = [super initWithSecret:secret])) {

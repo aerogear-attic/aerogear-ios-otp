@@ -1,5 +1,5 @@
 //
-//  TOTPGeneratorTests.m
+//  TotpTests.m
 //
 //  Copyright 2011 Google Inc.
 //
@@ -17,13 +17,13 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "TOTPGenerator.h"
+#import "Totp.h"
 
-@interface TOTPGeneratorTests : SenTestCase
+@interface TotpTests : SenTestCase
 
 @end
 
-@implementation TOTPGeneratorTests
+@implementation TotpTests
 
 - (void)testTOTP {
 
@@ -41,8 +41,8 @@
 
     for (size_t i = 0, j = 0; i < sizeof(intervals) / sizeof(*intervals); i++) {
 
-        TOTPGenerator *generator
-                = [[TOTPGenerator alloc] initWithSecret:secretData];
+        Totp *generator
+                = [[Totp alloc] initWithSecret:secretData];
 
         NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervals[i]];
 
