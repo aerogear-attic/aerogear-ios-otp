@@ -1,5 +1,5 @@
 //
-//  HOTPGenerator.m
+//  Taken with small modifications
 //
 //  Copyright 2011 Google Inc.
 //
