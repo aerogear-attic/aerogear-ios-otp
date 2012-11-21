@@ -45,7 +45,6 @@
 // endian.
 @interface OTPGenerator : NSObject
 
-@property (readonly, nonatomic, copy) NSString *algorithm;
 @property (readonly, nonatomic, copy) NSData *secret;
 @property (readonly, nonatomic) NSUInteger digits;
 
@@ -55,7 +54,6 @@
 
 // Designated initializer.
 - (id)initWithSecret:(NSData *)secret
-           algorithm:(NSString *)algorithm
               digits:(NSUInteger)digits;
 
 
@@ -75,6 +73,3 @@
 @end
 
 extern NSString *const kOTPGeneratorSHA1Algorithm;
-extern NSString *const kOTPGeneratorSHA256Algorithm;
-extern NSString *const kOTPGeneratorSHA512Algorithm;
-extern NSString *const kOTPGeneratorSHAMD5Algorithm;

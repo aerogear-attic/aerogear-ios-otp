@@ -45,7 +45,6 @@
 
 // Designated initializer.
 - (id)initWithSecret:(NSData *)secret
-           algorithm:(NSString *)algorithm
               digits:(NSUInteger)digits
               period:(NSTimeInterval)period;
 

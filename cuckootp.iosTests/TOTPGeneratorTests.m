@@ -1,7 +1,19 @@
 //
 //  TOTPGeneratorTests.m
-//  cuckootp.iosTests
 //
+//  Copyright 2011 Google Inc.
+//
+//  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+//  use this file except in compliance with the License.  You may obtain a copy
+//  of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+//  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+//  License for the specific language governing permissions and limitations under
+//  the License.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
@@ -18,11 +30,8 @@
     NSString *secret = @"12345678901234567890";
     NSData *secretData = [secret dataUsingEncoding:NSASCIIStringEncoding];
 
-    NSTimeInterval intervals[] = { 1111111111, 1234567890, 2000000000 };
+    NSTimeInterval intervals[] = {1111111111, 1234567890, 2000000000};
 
-    NSArray *algorithms = [NSArray arrayWithObjects:
-            kOTPGeneratorSHA1Algorithm,
-            nil];
     NSArray *results = [NSArray arrayWithObjects:
             // SHA1
             @"050471", // date1
@@ -30,22 +39,21 @@
             @"279037", // date3
             nil];
 
-    for (size_t i = 0, j = 0; i < sizeof(intervals)/sizeof(*intervals); i++) {
-        for (NSString *algorithm in algorithms) {
-            TOTPGenerator *generator
-                    = [[TOTPGenerator alloc] initWithSecret:secretData
-                                                  algorithm:algorithm
-                                                     digits:6
-                                                     period:30];
+    for (size_t i = 0, j = 0; i < sizeof(intervals) / sizeof(*intervals); i++) {
 
-            NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervals[i]];
+        TOTPGenerator *generator
+                = [[TOTPGenerator alloc] initWithSecret:secretData
+                                                 digits:6
+                                                 period:30];
 
-            STAssertEqualObjects([results objectAtIndex:j],
-            [generator generateOTPForDate:date],
-            @"Invalid result %d, %@, %@", i, algorithm, date);
-            j = j + 1;
-        }
+        NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervals[i]];
+
+        STAssertEqualObjects([results objectAtIndex:j],
+        [generator generateOTPForDate:date],
+        @"Invalid result %d, %@", i, date);
+        j = j + 1;
     }
+
 }
 
 @end

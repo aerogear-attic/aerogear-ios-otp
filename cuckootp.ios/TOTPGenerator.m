@@ -30,11 +30,9 @@
 }
 
 - (id)initWithSecret:(NSData *)secret
-           algorithm:(NSString *)algorithm
               digits:(NSUInteger)digits
               period:(NSTimeInterval)period {
   if ((self = [super initWithSecret:secret
-                          algorithm:algorithm
                              digits:digits])) {
 
     if (period <= 0 || period > 300) {
