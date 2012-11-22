@@ -16,9 +16,9 @@
 //  the License.
 //
 
-#import "Otp.h"
+#import "AGOtp.h"
 
-#import <CommonCrypto/CommonHMAC.h>
+#import <CommonCrypto/CommonCrypto.h>
 
 typedef enum {
     SIX   = 1000000,
@@ -29,11 +29,11 @@ typedef enum {
 
 const NSUInteger defaultDigits = 6;
 
-@interface Otp ()
+@interface AGOtp ()
 @property (readwrite, nonatomic, copy) NSData *secret;
 @end
 
-@implementation Otp
+@implementation AGOtp
 
 @synthesize secret = secret_;
 

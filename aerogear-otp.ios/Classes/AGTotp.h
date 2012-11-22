@@ -17,7 +17,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Otp.h"
+#import "AGOtp.h"
 
 // The Totp class generates a one-time password (OTP) using
 // the Time-based One-time Password Algorithm described in:
@@ -36,7 +36,7 @@
 // - T0 is the Unix time to start counting time steps (default value is
 //   0, Unix epoch) and is also a system parameter.
 //
-@interface Totp : Otp
+@interface AGTotp : AGOtp
 
 // Designated initializer.
 - (id)initWithSecret:(NSData *)secret;
