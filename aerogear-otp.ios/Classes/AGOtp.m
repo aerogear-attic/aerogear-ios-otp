@@ -18,7 +18,7 @@
 
 #import "AGOtp.h"
 
-#import <CommonCrypto/CommonHMAC.h>
+#import <CommonCrypto/CommonCrypto.h>
 
 typedef enum {
     SIX   = 1000000,
