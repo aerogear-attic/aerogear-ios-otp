@@ -16,15 +16,15 @@
 //  the License.
 //
 
-#import "Totp.h"
+#import "AGTotp.h"
 
 const NSUInteger defaultInterval = 30;
 
-@interface Totp ()
+@interface AGTotp ()
 
 @end
 
-@implementation Totp
+@implementation AGTotp
 
 - (id)initWithSecret:(NSData *)secret {
   if ((self = [super initWithSecret:secret])) {

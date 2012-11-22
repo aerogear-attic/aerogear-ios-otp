@@ -17,15 +17,15 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "Totp.h"
+#import "AGTotp.h"
 
-@interface TotpTests : SenTestCase
+@interface AGTotpTests : SenTestCase
 
 @end
 
-@implementation TotpTests
+@implementation AGTotpTests
 
-- (void)testTOTP {
+- (void)testAGTotp {
 
     NSString *secret = @"12345678901234567890";
     NSData *secretData = [secret dataUsingEncoding:NSASCIIStringEncoding];
@@ -41,8 +41,8 @@
 
     for (size_t i = 0, j = 0; i < sizeof(intervals) / sizeof(*intervals); i++) {
 
-        Totp *generator
-                = [[Totp alloc] initWithSecret:secretData];
+        AGTotp *generator
+                = [[AGTotp alloc] initWithSecret:secretData];
 
         NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervals[i]];
 
