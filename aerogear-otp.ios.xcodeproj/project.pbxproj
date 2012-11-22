@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		81F411400E888F8F8FC747C3 /* AGTotp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41F70D8A686C1492A99EC /* AGTotp.h */; };
 		81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81F41AE49B44356348304329 /* InfoPlist.strings */; };
-		81F41258F05528DFC3EDD476 /* TotpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F413635101311EA2858A9A /* TotpTests.m */; };
+		81F41258F05528DFC3EDD476 /* AGTotpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F413635101311EA2858A9A /* AGTotpTests.m */; };
 		81F41756774CCFE0E443575E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F41D8D0107C4A79962F802 /* Foundation.framework */; };
 		81F4183B5599B1F00B7404BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F4106D1F3FE8FB17BDE31F /* UIKit.framework */; };
 		81F41877C7A276B7428ADFA7 /* AGOtp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41214CF9DDC5E95CC61D0 /* AGOtp.h */; };
@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		81F4106D1F3FE8FB17BDE31F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F41214CF9DDC5E95CC61D0 /* AGOtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGOtp.h; path = Classes/AGOtp.h; sourceTree = "<group>"; };
-		81F413635101311EA2858A9A /* TotpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotpTests.m; sourceTree = "<group>"; };
+		81F413635101311EA2858A9A /* AGTotpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGTotpTests.m; sourceTree = "<group>"; };
 		81F4153064F1AD8390B46832 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		81F41619A751E93404EB6E4B /* AGTotp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTotp.m; path = Classes/AGTotp.m; sourceTree = "<group>"; };
 		81F41621D94B6B79552689A3 /* libaerogear-otp.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libaerogear-otp.ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				81F41B5BE5FFADC666E61AA4 /* Supporting Files */,
-				81F413635101311EA2858A9A /* TotpTests.m */,
+				81F413635101311EA2858A9A /* AGTotpTests.m */,
 			);
 			path = "aerogear-otp.iosTests";
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F41258F05528DFC3EDD476 /* TotpTests.m in Sources */,
+				81F41258F05528DFC3EDD476 /* AGTotpTests.m in Sources */,
 				E1F939CF165AA14500C5EB63 /* AGTotp.m in Sources */,
 				E1F939D1165AA14F00C5EB63 /* AGOtp.m in Sources */,
 			);
