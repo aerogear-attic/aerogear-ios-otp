@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/aerogear/aerogear-ios"
   s.license      = 'Apache License, Version 2.0'
   s.author       = "Red Hat, Inc."
-  s.source       = { :git => 'https://github.com/aerogear/aerogear-ios.git', :tag => '1.0.0.M1.20121124' }
+  s.source       = { :git => 'https://github.com/aerogear/aerogear-otp-ios.git', :tag => '1.0.0.M1.20121124' }
   s.platform     = :ios
   s.source_files = 'aerogear-otp.ios/Classes/*.{h,m}'
   s.public_header_files = 'aerogear-otp.ios/Classes/AeroGearOTP.h', 'aerogear-otp.ios/Classes/AGOtp.h', 'aerogear-otp.ios/Classes/AGTotp.h'
