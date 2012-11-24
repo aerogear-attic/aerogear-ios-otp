@@ -19,8 +19,8 @@
 Pod::Spec.new do |s|
   s.name         = "AeroGear-OTP"
   s.version      = "1.0.0.M1.20121124"
-  s.summary      = "Provides an Objective-C One Time Password API"
-  s.homepage     = "https://github.com/aerogear/aerogear-ios"
+  s.summary      = "Provides an Objective-C One Time Password API."
+  s.homepage     = "https://github.com/aerogear/aerogear-otp-ios"
   s.license      = 'Apache License, Version 2.0'
   s.author       = "Red Hat, Inc."
   s.source       = { :git => 'https://github.com/aerogear/aerogear-otp-ios.git', :tag => '1.0.0.M1.20121124' }
