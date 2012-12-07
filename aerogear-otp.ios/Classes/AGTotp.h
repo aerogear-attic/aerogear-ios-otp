@@ -45,6 +45,6 @@
 // |digits|, |period| and |now| values configured on the object.
 // The return value is an NSString of |digits| length, with leading
 // zero-padding as required.
-- (NSString *)now:(NSDate *)date;
+- (NSString *)now;
 
 @end
