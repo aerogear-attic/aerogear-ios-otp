@@ -17,6 +17,7 @@
 //
 
 #import "AGTotp.h"
+#import "AGClock.h"
 
 const NSUInteger defaultInterval = 30;
 
@@ -37,10 +38,9 @@ const NSUInteger defaultInterval = 30;
 }
 
 - (NSString *)now {
-    NSDate *date = [NSDate date];
-    NSTimeInterval seconds = [date timeIntervalSince1970];
-    uint64_t counter = (uint64_t) (seconds / defaultInterval);
-    return [super generateOTPForCounter:counter];
+    AGClock *clock = [AGClock init];
+    uint64_t interval = [clock currentInterval];
+    return [super generateOTPForCounter:interval];
 }
 
 @end
