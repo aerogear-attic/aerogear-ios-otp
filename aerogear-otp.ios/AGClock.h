@@ -21,7 +21,10 @@
 
 @interface AGClock : NSObject
 
+@property (nonatomic, copy) NSDate *date;
+
 - (id)init;
+- (id)initWithDate:(NSDate *)startingDate;
 - (uint64_t)currentInterval;
 
 @end

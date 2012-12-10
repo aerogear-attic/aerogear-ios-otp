@@ -341,6 +341,7 @@
 				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
 				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
 				PRODUCT_NAME = "aerogear-otp.iosTests";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -429,6 +430,7 @@
 				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
 				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
 				PRODUCT_NAME = "aerogear-otp.iosTests";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;

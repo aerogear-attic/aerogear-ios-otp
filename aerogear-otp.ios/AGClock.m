@@ -21,17 +21,20 @@
 @implementation AGClock
 
 - (id)init {
-    self = [super init];
+    return [self initWithDate:[NSDate date]];
+}
+
+- (id)initWithDate:(NSDate *)startingDate {
+    if (self = [super init]) {
+        self.date = startingDate;
+    }
     return (self);
 }
 
 - (uint64_t)currentInterval {
 
-    NSDate *date = [NSDate date];
-    NSTimeInterval seconds = [date timeIntervalSince1970];
-    NSLog(@"Seconds: %f", seconds);
+    NSTimeInterval seconds = [self.date timeIntervalSince1970];
     uint64_t counter = (uint64_t) (seconds / 30);
-    NSLog(@"Counter: %qu", counter);
     return counter;
 }
 @end
