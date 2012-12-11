@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/aerogear/aerogear-otp-ios.git', :tag => '1.0.0.M1.20121124' }
   s.platform     = :ios
   s.source_files = 'aerogear-otp.ios/Classes/*.{h,m}'
-  s.public_header_files = 'aerogear-otp.ios/Classes/AeroGearOTP.h', 'aerogear-otp.ios/Classes/AGOtp.h', 'aerogear-otp.ios/Classes/AGTotp.h'
+  s.public_header_files = 'aerogear-otp.ios/Classes/AeroGearOTP.h', 'aerogear-otp.ios/Classes/AGOtp.h', 'aerogear-otp.ios/Classes/AGTotp.h', 'aerogear-otp.ios/Classes/AGClock.h', 'aerogear-otp.ios/Classes/AGBase32.h', 'aerogear-otp.ios/Classes/AGStringEncoding.h'
   s.requires_arc = true
 end
