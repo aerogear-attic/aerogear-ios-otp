@@ -69,21 +69,21 @@
 		02EB89E49E7843ECB5C2BAA9 /* libPods-aerogear-otp.iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-aerogear-otp.iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BD4D415A0A41898667C1F3 /* Pods-aerogear-otp.iosTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aerogear-otp.iosTests.xcconfig"; path = "Pods/Pods-aerogear-otp.iosTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		57A0DA83165E2CFA00F6965A /* AeroGearOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeroGearOTP.h; path = Classes/AeroGearOTP.h; sourceTree = "<group>"; };
-		81F410518A256C3F0B7D3755 /* AGBase32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBase32.m; sourceTree = "<group>"; };
+		81F410518A256C3F0B7D3755 /* AGBase32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGBase32.m; path = Classes/AGBase32.m; sourceTree = "<group>"; };
 		81F4106D1F3FE8FB17BDE31F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		81F4116F749633D5D40920F4 /* AGStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGStringEncoding.h; sourceTree = "<group>"; };
+		81F4116F749633D5D40920F4 /* AGStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGStringEncoding.h; path = Classes/AGStringEncoding.h; sourceTree = "<group>"; };
 		81F41214CF9DDC5E95CC61D0 /* AGOtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGOtp.h; path = Classes/AGOtp.h; sourceTree = "<group>"; };
 		81F413635101311EA2858A9A /* AGTotpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGTotpTests.m; sourceTree = "<group>"; };
 		81F4153064F1AD8390B46832 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		81F415D53FE00D394660FECD /* AGStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGStringEncoding.m; sourceTree = "<group>"; };
+		81F415D53FE00D394660FECD /* AGStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGStringEncoding.m; path = Classes/AGStringEncoding.m; sourceTree = "<group>"; };
 		81F41619A751E93404EB6E4B /* AGTotp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTotp.m; path = Classes/AGTotp.m; sourceTree = "<group>"; };
 		81F41621D94B6B79552689A3 /* libaerogear-otp.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libaerogear-otp.ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81F417C839AD9C2AC8FA1BA3 /* AGClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGClock.h; sourceTree = "<group>"; };
-		81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGClock.m; sourceTree = "<group>"; };
+		81F417C839AD9C2AC8FA1BA3 /* AGClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGClock.h; path = Classes/AGClock.h; sourceTree = "<group>"; };
+		81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGClock.m; path = Classes/AGClock.m; sourceTree = "<group>"; };
 		81F41A09B543FA84D4F3E6FF /* AGOtp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGOtp.m; path = Classes/AGOtp.m; sourceTree = "<group>"; };
 		81F41A339F6C8F87B8839281 /* aerogear-otp.ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aerogear-otp.ios-Prefix.pch"; sourceTree = "<group>"; };
 		81F41A9BDB3BA0CCB64675D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		81F41C3A626C603D977F068A /* AGBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBase32.h; sourceTree = "<group>"; };
+		81F41C3A626C603D977F068A /* AGBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGBase32.h; path = Classes/AGBase32.h; sourceTree = "<group>"; };
 		81F41C79681C1E7FC6E18233 /* aerogear-otp.iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aerogear-otp.iosTests-Info.plist"; sourceTree = "<group>"; };
 		81F41D8D0107C4A79962F802 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		81F41DAAA0F339CAA4A45113 /* aerogear-otp.iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aerogear-otp.iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,12 +142,12 @@
 				81F41214CF9DDC5E95CC61D0 /* AGOtp.h */,
 				81F41A09B543FA84D4F3E6FF /* AGOtp.m */,
 				57A0DA83165E2CFA00F6965A /* AeroGearOTP.h */,
-				81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */,
 				81F417C839AD9C2AC8FA1BA3 /* AGClock.h */,
-				81F415D53FE00D394660FECD /* AGStringEncoding.m */,
+				81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */,
 				81F4116F749633D5D40920F4 /* AGStringEncoding.h */,
-				81F410518A256C3F0B7D3755 /* AGBase32.m */,
+				81F415D53FE00D394660FECD /* AGStringEncoding.m */,
 				81F41C3A626C603D977F068A /* AGBase32.h */,
+				81F410518A256C3F0B7D3755 /* AGBase32.m */,
 			);
 			path = "aerogear-otp.ios";
 			sourceTree = "<group>";
