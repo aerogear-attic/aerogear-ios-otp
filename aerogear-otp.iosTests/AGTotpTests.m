@@ -18,6 +18,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "AGTotp.h"
+#import "AGClock.h"
 
 @interface AGTotpTests : SenTestCase
 
@@ -25,7 +26,28 @@
 
 @implementation AGTotpTests
 
+NSDate *currentDate;
+
+- (void)setUp {
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    [gregorianCalendar setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    NSDateComponents *dateComps = [[NSDateComponents alloc] init];
+    [dateComps setCalendar:gregorianCalendar];
+    [dateComps setYear:2012];
+    [dateComps setMonth:12];
+    [dateComps setDay:21];
+    [dateComps setHour:0];
+    [dateComps setMinute:0];
+    [dateComps setSecond:0];
+    currentDate = [dateComps date];
+    NSLog(@"Current date %@", currentDate);
+}
+
 - (void)testAGTotp {
+
+    AGClock *clock = [[AGClock alloc] initWithDate:currentDate];
+
+    NSLog(@"Current Interval: %qu", [clock currentInterval]);
 
     NSString *secret = @"B2374TNIQ3HKC446";
     NSData *secretData = [secret dataUsingEncoding:NSASCIIStringEncoding];
@@ -33,7 +55,7 @@
     AGTotp *generator
             = [[AGTotp alloc] initWithSecret:secretData];
 
-    NSLog(@"Current OTP: %@", [generator now]);
+    NSLog(@"Current OTP: %@", [generator now:clock]);
 
 }
 

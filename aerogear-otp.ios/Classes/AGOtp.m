@@ -17,6 +17,7 @@
 //
 
 #import "AGOtp.h"
+#import "AGClock.h"
 
 #import <CommonCrypto/CommonCrypto.h>
 

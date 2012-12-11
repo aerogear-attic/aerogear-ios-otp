@@ -18,6 +18,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class AGClock;
+
 // The Otp class generates a one-time password (OTP) using
 // the HMAC-Based One-Time Password Algorithm described in RFC4226:
 // http://tools.ietf.org/html/rfc4226

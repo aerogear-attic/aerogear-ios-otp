@@ -19,6 +19,8 @@
 #import <Foundation/Foundation.h>
 #import "AGOtp.h"
 
+@class AGClock;
+
 // The Totp class generates a one-time password (OTP) using
 // the Time-based One-time Password Algorithm described in:
 // http://tools.ietf.org/html/draft-mraihi-totp-timebased
@@ -38,6 +40,8 @@
 //
 @interface AGTotp : AGOtp
 
+@property (nonatomic, copy) AGClock *clock;
+
 // Designated initializer.
 - (id)initWithSecret:(NSData *)secret;
 
@@ -46,5 +50,7 @@
 // The return value is an NSString of |digits| length, with leading
 // zero-padding as required.
 - (NSString *)now;
+
+- (NSString *)now:(AGClock *)clock;
 
 @end

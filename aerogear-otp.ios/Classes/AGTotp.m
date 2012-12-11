@@ -30,7 +30,7 @@ const NSUInteger defaultInterval = 30;
 - (id)initWithSecret:(NSData *)secret {
     if ((self = [super initWithSecret:secret])) {
     }
-    return self;
+    return (self);
 }
 
 - (NSString *)generateOTP {
@@ -38,7 +38,10 @@ const NSUInteger defaultInterval = 30;
 }
 
 - (NSString *)now {
-    AGClock *clock = [AGClock init];
+    return [self now:[AGClock init]];
+}
+
+- (NSString *)now:(AGClock *)clock {
     uint64_t interval = [clock currentInterval];
     return [super generateOTPForCounter:interval];
 }
