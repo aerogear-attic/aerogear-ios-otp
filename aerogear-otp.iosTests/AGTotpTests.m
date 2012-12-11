@@ -19,6 +19,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "AGTotp.h"
 #import "AGClock.h"
+#import "AGBase32.h"
 
 @interface AGTotpTests : SenTestCase
 
@@ -40,22 +41,20 @@ NSDate *currentDate;
     [dateComps setMinute:0];
     [dateComps setSecond:0];
     currentDate = [dateComps date];
-    NSLog(@"Current date %@", currentDate);
 }
 
 - (void)testAGTotp {
 
     AGClock *clock = [[AGClock alloc] initWithDate:currentDate];
 
-    NSLog(@"Current Interval: %qu", [clock currentInterval]);
-
     NSString *secret = @"B2374TNIQ3HKC446";
-    NSData *secretData = [secret dataUsingEncoding:NSASCIIStringEncoding];
+
+    NSData *secretData = [AGBase32 base32Decode:secret];
 
     AGTotp *generator
             = [[AGTotp alloc] initWithSecret:secretData];
 
-    NSLog(@"Current OTP: %@", [generator now:clock]);
+    STAssertEqualObjects(@"982812", [generator now:clock], @"Incorrect OTP");
 
 }
 
