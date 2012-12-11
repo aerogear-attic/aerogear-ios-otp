@@ -27,6 +27,20 @@ static NSString *const kBase32Sep = @" -";
 
 @implementation AGBase32
 
+- (id)init {
+    if ([self class] == [AGBase32 class]) {
+        @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                       reason:@"Error, attempting to instantiate AGBase32 directly."
+                                     userInfo:nil];
+    }
+
+    self = [super init];
+    if (self) {
+        // Initialization code here.
+    }
+    return self;
+}
+
 + (NSString *)encodeBase32:(NSData *)data {
     AGStringEncoding *coder =
             [AGStringEncoding stringEncodingWithString:kBase32Charset];
