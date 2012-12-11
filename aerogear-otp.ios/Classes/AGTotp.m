@@ -17,6 +17,7 @@
 //
 
 #import "AGTotp.h"
+#import "AGClock.h"
 
 const NSUInteger defaultInterval = 30;
 
@@ -27,24 +28,22 @@ const NSUInteger defaultInterval = 30;
 @implementation AGTotp
 
 - (id)initWithSecret:(NSData *)secret {
-  if ((self = [super initWithSecret:secret])) {
-  }
-  return self;
+    if ((self = [super initWithSecret:secret])) {
+    }
+    return (self);
 }
 
 - (NSString *)generateOTP {
-  return [self now:[NSDate date]];
+    return [self now];
 }
 
-- (NSString *)now:(NSDate *)date {
-  if (!date) {
-    // If no now date specified, use the current date.
-    date = [NSDate date];
-  }
+- (NSString *)now {
+    return [self now:[AGClock init]];
+}
 
-  NSTimeInterval seconds = [date timeIntervalSince1970];
-  uint64_t counter = (uint64_t)(seconds / defaultInterval);
-  return [super generateOTPForCounter:counter];
+- (NSString *)now:(AGClock *)clock {
+    uint64_t interval = [clock currentInterval];
+    return [super generateOTPForCounter:interval];
 }
 
 @end

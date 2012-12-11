@@ -17,6 +17,7 @@
 //
 
 #import "AGOtp.h"
+#import "AGClock.h"
 
 #import <CommonCrypto/CommonCrypto.h>
 
@@ -74,7 +75,7 @@ const NSUInteger defaultDigits = 6;
   CCHmacFinal(&ctx, [hash mutableBytes]);
 
   const char *ptr = [hash bytes];
-  unsigned char offset = ptr[hashLength-1] & 0x0f;
+  char const offset = ptr[hashLength-1] & 0x0f;
   unsigned long truncatedHash =
     NSSwapBigLongToHost(*((unsigned long *)&ptr[offset])) & 0x7fffffff;
   unsigned long pinValue = truncatedHash % SIX;
