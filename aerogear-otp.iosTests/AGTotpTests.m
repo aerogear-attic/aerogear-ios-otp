@@ -18,6 +18,8 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "AGTotp.h"
+#import "AGClock.h"
+#import "AGBase32.h"
 
 @interface AGTotpTests : SenTestCase
 
@@ -25,32 +27,34 @@
 
 @implementation AGTotpTests
 
+NSDate *currentDate;
+
+- (void)setUp {
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    [gregorianCalendar setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    NSDateComponents *dateComps = [[NSDateComponents alloc] init];
+    [dateComps setCalendar:gregorianCalendar];
+    [dateComps setYear:2012];
+    [dateComps setMonth:12];
+    [dateComps setDay:21];
+    [dateComps setHour:0];
+    [dateComps setMinute:0];
+    [dateComps setSecond:0];
+    currentDate = [dateComps date];
+}
+
 - (void)testAGTotp {
 
-    NSString *secret = @"12345678901234567890";
-    NSData *secretData = [secret dataUsingEncoding:NSASCIIStringEncoding];
+    AGClock *clock = [[AGClock alloc] initWithDate:currentDate];
 
-    NSTimeInterval intervals[] = {1111111111, 1234567890, 2000000000};
+    NSString *secret = @"B2374TNIQ3HKC446";
 
-    NSArray *results = [NSArray arrayWithObjects:
-            // SHA1
-            @"050471", // date1
-            @"005924", // date2
-            @"279037", // date3
-            nil];
+    NSData *secretData = [AGBase32 base32Decode:secret];
 
-    for (size_t i = 0, j = 0; i < sizeof(intervals) / sizeof(*intervals); i++) {
+    AGTotp *generator
+            = [[AGTotp alloc] initWithSecret:secretData];
 
-        AGTotp *generator
-                = [[AGTotp alloc] initWithSecret:secretData];
-
-        NSDate *date = [NSDate dateWithTimeIntervalSince1970:intervals[i]];
-
-        STAssertEqualObjects([results objectAtIndex:j],
-        [generator now:date],
-        @"Invalid result %d, %@", i, date);
-        j = j + 1;
-    }
+    STAssertEqualObjects(@"982812", [generator now:clock], @"Incorrect OTP");
 
 }
 
