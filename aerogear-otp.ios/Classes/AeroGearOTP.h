@@ -21,5 +21,8 @@
 
 #import "AGOtp.h"
 #import "AGTotp.h"
+#import "AGClock.h"
+#import "AGBase32.h"
+#import "AGStringEncoding.h"
 
 #endif /* _AEROGEAROTP_ */
