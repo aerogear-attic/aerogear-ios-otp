@@ -38,7 +38,7 @@ const NSUInteger defaultInterval = 30;
 }
 
 - (NSString *)now {
-    return [self now:[AGClock init]];
+    return [self now:[[AGClock alloc] init]];
 }
 
 - (NSString *)now:(AGClock *)clock {
