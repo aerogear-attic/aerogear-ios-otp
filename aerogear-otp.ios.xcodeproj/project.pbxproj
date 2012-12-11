@@ -137,17 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				81F41CDC9BA237C5509D7034 /* Supporting Files */,
-				81F41F70D8A686C1492A99EC /* AGTotp.h */,
-				81F41619A751E93404EB6E4B /* AGTotp.m */,
-				81F41214CF9DDC5E95CC61D0 /* AGOtp.h */,
-				81F41A09B543FA84D4F3E6FF /* AGOtp.m */,
+				A0AD30951677D2ED00104932 /* Classes */,
 				57A0DA83165E2CFA00F6965A /* AeroGearOTP.h */,
-				81F417C839AD9C2AC8FA1BA3 /* AGClock.h */,
-				81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */,
-				81F4116F749633D5D40920F4 /* AGStringEncoding.h */,
-				81F415D53FE00D394660FECD /* AGStringEncoding.m */,
-				81F41C3A626C603D977F068A /* AGBase32.h */,
-				81F410518A256C3F0B7D3755 /* AGBase32.m */,
 			);
 			path = "aerogear-otp.ios";
 			sourceTree = "<group>";
@@ -189,6 +180,23 @@
 				02EB89E49E7843ECB5C2BAA9 /* libPods-aerogear-otp.iosTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0AD30951677D2ED00104932 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				81F41F70D8A686C1492A99EC /* AGTotp.h */,
+				81F41619A751E93404EB6E4B /* AGTotp.m */,
+				81F41214CF9DDC5E95CC61D0 /* AGOtp.h */,
+				81F41A09B543FA84D4F3E6FF /* AGOtp.m */,
+				81F417C839AD9C2AC8FA1BA3 /* AGClock.h */,
+				81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */,
+				81F4116F749633D5D40920F4 /* AGStringEncoding.h */,
+				81F415D53FE00D394660FECD /* AGStringEncoding.m */,
+				81F41C3A626C603D977F068A /* AGBase32.h */,
+				81F410518A256C3F0B7D3755 /* AGBase32.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
