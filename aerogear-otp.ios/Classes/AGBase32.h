@@ -22,6 +22,10 @@
 
 @interface AGBase32 : NSObject
 
+/**
+ * Encodes arbitrary byte arrays as case-insensitive base-32 strings.
+ * @param string The shared secret to be encoded.
+ */
 + (NSData *)base32Decode:(NSString *)string;
 
 @end
