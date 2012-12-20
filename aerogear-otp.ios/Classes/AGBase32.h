@@ -25,6 +25,7 @@
 /**
  * Encodes arbitrary byte arrays as case-insensitive base-32 strings.
  * @param string The shared secret to be encoded.
+ * @return Data Base32 encoded object.
  */
 + (NSData *)base32Decode:(NSString *)string;
 
