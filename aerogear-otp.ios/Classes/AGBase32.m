@@ -41,14 +41,6 @@ static NSString *const kBase32Sep = @" -";
     return self;
 }
 
-+ (NSString *)encodeBase32:(NSData *)data {
-    AGStringEncoding *coder =
-            [AGStringEncoding stringEncodingWithString:kBase32Charset];
-    [coder addDecodeSynonyms:kBase32Synonyms];
-    [coder ignoreCharacters:kBase32Sep];
-    return [coder encode:data];
-}
-
 + (NSData *)base32Decode:(NSString *)string {
     AGStringEncoding *coder =
             [AGStringEncoding stringEncodingWithString:kBase32Charset];

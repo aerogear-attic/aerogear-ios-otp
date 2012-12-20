@@ -22,7 +22,6 @@
 
 @interface AGBase32 : NSObject
 
-+ (NSString *)encodeBase32:(NSData *)data;
 + (NSData *)base32Decode:(NSString *)string;
 
 @end
