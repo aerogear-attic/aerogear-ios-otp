@@ -17,12 +17,34 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * AGClock objects represent a single point in time and used by OTP to calculate 
+ * the time interval between either the current date or the specified date passed
+ * during construction of the object.
+ */
 
 @interface AGClock : NSObject
 
+/**
+ * The date this AGClock object is initialized to.
+ */
 @property (nonatomic, copy) NSDate *date;
 
+/**
+ * Initialize a new AGClock object using the specified startingDate.
+ *
+ * @param startingDate The NSDate to initialize to.
+ *
+ * @returns A new AGClock object set to the date specified by startingDate.
+ */
 - (id)initWithDate:(NSDate *)startingDate;
+
+/**
+ * Calculate the time interval from the date this AGClock object
+ * is initialized to.
+ *
+ * @returns the calculated time interval.
+ */
 - (uint64_t)currentInterval;
 
 @end

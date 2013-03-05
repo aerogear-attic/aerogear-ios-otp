@@ -19,7 +19,9 @@
 
 #import <Foundation/Foundation.h>
 
-// A generic class for arbitrary base-2 to 128 string encoding and decoding.
+/**
+ * A generic class for arbitrary base-2 to 128 string encoding and decoding.
+ */
 @interface AGStringEncoding : NSObject {
  @private
   NSData *charMapData_;
@@ -32,42 +34,71 @@
   int padLen_;
 }
 
-// Create a new, autoreleased AGStringEncoding object with a standard encoding.
-
-
-// Create a new, autoreleased AGStringEncoding object with the given string,
-// as described below.
+/**
+ * Creates and returns a new autoreleased AGStringEncoding object initialized by the given string.
+ *
+ * @param string The string to use.
+ *
+ * @return An AGStringEncoding object initialized by the given string.
+ */
 + (id)stringEncodingWithString:(NSString *)string;
 
-// Initialize a new AGStringEncoding object with the string.
-//
-// The length of the string must be a power of 2, at least 2 and at most 128.
-// Only 7-bit ASCII characters are permitted in the string.
-//
-// These characters are the canonical set emitted during encoding.
-// If the characters have alternatives (e.g. case, easily transposed) then use
-// addDecodeSynonyms: to configure them.
+/**
+ * Returns an AGStringEncoding object initialized by the specified string.
+ *
+ * The length of the string must be a power of 2, at least 2 and at most 128.
+ * Only 7-bit ASCII characters are permitted in the string.
+ *
+ * These characters are the canonical set emitted during encoding.
+ * If the characters have alternatives (e.g. case, easily transposed) then use
+ * addDecodeSynonyms: to configure them.
+ *
+ * @param string The string to use.
+ *
+ * @return An AGStringEncoding object initialized by the given string.
+ */
 - (id)initWithString:(NSString *)string;
 
-// Add decoding synonyms as specified in the synonyms argument.
-//
-// It should be a sequence of one previously reverse mapped character,
-// followed by one or more non-reverse mapped character synonyms.
-// Only 7-bit ASCII characters are permitted in the string.
-//
-// e.g. If a GTMStringEncoder object has already been initialised with a set
-// of characters excluding I, L and O (to avoid confusion with digits) and you
-// want to accept them as digits you can call addDecodeSynonyms:@"0oO1iIlL".
+/**
+ * Add decoding synonyms as specified in the synonyms argument.
+ *
+ * It should be a sequence of one previously reverse mapped character,
+ * followed by one or more non-reverse mapped character synonyms.
+ * Only 7-bit ASCII characters are permitted in the string.
+ *
+ * e.g. If a GTMStringEncoder object has already been initialised with a set
+ * of characters excluding I, L and O (to avoid confusion with digits) and you
+ * want to accept them as digits you can call addDecodeSynonyms:@"0oO1iIlL".
+ *
+ * @param synonyms the sequence of synonyms.
+ */
 - (void)addDecodeSynonyms:(NSString *)synonyms;
 
-// A sequence of characters to ignore if they occur during encoding.
-// Only 7-bit ASCII characters are permitted in the string.
+/**
+ * A sequence of characters to ignore if they occur during encoding.
+ * 
+ * Only 7-bit ASCII characters are permitted in the string.
+ *
+ * @param chars The sequence of chars to ignore.
+ */
 - (void)ignoreCharacters:(NSString *)chars;
 
-// Encode a raw binary buffer to a 7-bit ASCII string.
+/**
+ * Encode a raw binary buffer to a 7-bit ASCII string.
+ *
+ * @param data The data to encode
+ *
+ * @return The encoded string
+ */
 - (NSString *)encode:(NSData *)data;
 
-// Decode a 7-bit ASCII string to a raw binary buffer.
+/**
+ * Decode a 7-bit ASCII string to a raw binary buffer.
+ *
+ * @param string The string to decode
+ *
+ * @return The raw binary buffer
+ */
 - (NSData *)decode:(NSString *)string;
 
 @end
