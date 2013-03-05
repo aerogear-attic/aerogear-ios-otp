@@ -21,8 +21,8 @@
 @class AGClock;
 
 /** The Otp class generates a one-time password (OTP) using
- * the HMAC-Based One-Time Password Algorithm described in RFC4226:
- * http://tools.ietf.org/html/rfc4226
+ * the HMAC-Based One-Time Password Algorithm described in RFC6238:
+ * http://tools.ietf.org/html/rfc6238
  *
  * The HOTP algorithm is based on an increasing counter value and a
  * static symmetric key known only to the token and the validation
