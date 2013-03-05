@@ -17,13 +17,17 @@
 
 #import <Foundation/Foundation.h>
 
-
+/**
+ * Utility methods for handling Base32 encoding schemas.
+ */
 @interface AGBase32 : NSObject
 
 /**
- * Encodes arbitrary byte arrays as case-insensitive base-32 strings.
- * @param string The shared secret to be encoded.
- * @return Data Base32 encoded object.
+ * Creates and returns a data object by decoding the given base32 encoded string.
+ *
+ * @param string The base32 string from which to decode.
+ *
+ * @return A data object containing the data from the decoded string.
  */
 + (NSData *)base32Decode:(NSString *)string;
 
