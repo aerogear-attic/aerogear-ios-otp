@@ -1,0 +1,8 @@
+//
+//  common.xcconfig
+//  AeroGear-iOS
+//
+//  Created by Christos Vasilakis on 03/06/13.
+//  Copyright (c) 2013 JBoss. All rights reserved.
+//
+BUILD_DIR=$(PROJECT_DIR)/build/aerogear-otp.ios/Build/Products
