@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5700691681F3404B82D1B616 /* libPods-aerogear-otp.iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EB89E49E7843ECB5C2BAA9 /* libPods-aerogear-otp.iosTests.a */; };
+		6F303D3916E7967B00F88AC0 /* common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6F303D3816E7967B00F88AC0 /* common.xcconfig */; };
 		81F410675DF4BE98DD67260F /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */; };
 		81F411400E888F8F8FC747C3 /* AGTotp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41F70D8A686C1492A99EC /* AGTotp.h */; };
 		81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81F41AE49B44356348304329 /* InfoPlist.strings */; };
@@ -69,6 +70,7 @@
 		02EB89E49E7843ECB5C2BAA9 /* libPods-aerogear-otp.iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-aerogear-otp.iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BD4D415A0A41898667C1F3 /* Pods-aerogear-otp.iosTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aerogear-otp.iosTests.xcconfig"; path = "Pods/Pods-aerogear-otp.iosTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		57A0DA83165E2CFA00F6965A /* AeroGearOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeroGearOTP.h; path = Classes/AeroGearOTP.h; sourceTree = "<group>"; };
+		6F303D3816E7967B00F88AC0 /* common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = common.xcconfig; sourceTree = "<group>"; };
 		81F410518A256C3F0B7D3755 /* AGBase32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGBase32.m; path = Classes/AGBase32.m; sourceTree = "<group>"; };
 		81F4106D1F3FE8FB17BDE31F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F4116F749633D5D40920F4 /* AGStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGStringEncoding.h; path = Classes/AGStringEncoding.h; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		81F41C8363C8B4FF82940B04 = {
 			isa = PBXGroup;
 			children = (
+				6F303D3816E7967B00F88AC0 /* common.xcconfig */,
 				81F415AECDD9C8C189F9DF76 /* Products */,
 				81F41D392730CBCAA494FACD /* Frameworks */,
 				81F41A4F242A5F3F8A0988CD /* aerogear-otp.ios */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */,
+				6F303D3916E7967B00F88AC0 /* common.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +384,7 @@
 		};
 		81F41B18288687AEA611B763 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F303D3816E7967B00F88AC0 /* common.xcconfig */;
 			buildSettings = {
 				DSTROOT = "/tmp/aerogear-otp.ios.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -440,6 +445,7 @@
 		};
 		81F41CDD33B46BB878AA9624 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F303D3816E7967B00F88AC0 /* common.xcconfig */;
 			buildSettings = {
 				DSTROOT = "/tmp/aerogear-otp.ios.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
