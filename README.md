@@ -12,4 +12,6 @@ _BEFORE_ you can run the tests, you need to run the following command:
 
 Now you are almost done! You just need to open the ```aerogear-otp.ios.xcworkspace``` in order to run the TODO app!
 
+For more details, please refer to our [documentation](http://aerogear.org/docs/specs/aerogear-security-otp/)
+
 Enjoy!
