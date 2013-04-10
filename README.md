@@ -1,4 +1,4 @@
-# aerogear-otp-ios [![Build Status](https://travis-ci.org/matzew/aerogear-otp-ios.png)](https://travis-ci.org/matzew/aerogear-otp-ios)
+# aerogear-otp-ios [![Build Status](https://travis-ci.org/aerogear/aerogear-otp-ios.png)](https://travis-ci.org/aerogear/aerogear-otp-ios)
 
 ##Objective-C One Time Password API
 
