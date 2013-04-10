@@ -1,4 +1,6 @@
-# AeroGear-OTP-iOS - Objective-C One Time Password API
+# aerogear-otp-ios [![Build Status](https://travis-ci.org/matzew/aerogear-otp-ios.png)](https://travis-ci.org/matzew/aerogear-otp-ios)
+
+##Objective-C One Time Password API
 
 A iOS library for generating one time passwords according to [RFC 6238](http://tools.ietf.org/html/rfc6238).
 
