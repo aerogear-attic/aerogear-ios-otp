@@ -1,1 +1,3 @@
 language: objective-c
+notifications:
+  irc: "irc.freenode.org#aerogear"
