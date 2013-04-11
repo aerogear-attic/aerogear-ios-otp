@@ -12,7 +12,7 @@ _BEFORE_ you can run the tests, you need to run the following command:
 
     pod install
 
-Now you are almost done! You just need to open the ```aerogear-otp.ios.xcworkspace``` in order to run the TODO app!
+Now you are almost done! You just need to open the ```aerogear-otp.ios.xcworkspace``` in order to start hacking on the library code!
 
 For more details, please refer to our [documentation](http://aerogear.org/docs/specs/aerogear-security-otp/)
 
