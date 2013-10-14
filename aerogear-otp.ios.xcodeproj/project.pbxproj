@@ -27,14 +27,8 @@
 		81F41EF24351CF2FDE3EAB37 /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* AGOtp.m */; };
 		E11169A216724E6900C07264 /* AGClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E11169A116724E6900C07264 /* AGClockTests.m */; };
 		E19BA98316727DDC00736639 /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */; };
-		E19BA98416727DDC00736639 /* AGClock.h in Sources */ = {isa = PBXBuildFile; fileRef = 81F417C839AD9C2AC8FA1BA3 /* AGClock.h */; };
-		E19BA98616727DF200736639 /* AGTotp.h in Sources */ = {isa = PBXBuildFile; fileRef = 81F41F70D8A686C1492A99EC /* AGTotp.h */; };
-		E19BA98716727DF200736639 /* AGOtp.h in Sources */ = {isa = PBXBuildFile; fileRef = 81F41214CF9DDC5E95CC61D0 /* AGOtp.h */; };
-		E19BA98816727DF200736639 /* AeroGearOTP.h in Sources */ = {isa = PBXBuildFile; fileRef = 57A0DA83165E2CFA00F6965A /* AeroGearOTP.h */; };
 		E1D6C1B11676D39000995666 /* AGStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F415D53FE00D394660FECD /* AGStringEncoding.m */; };
-		E1D6C1B21676D39000995666 /* AGStringEncoding.h in Sources */ = {isa = PBXBuildFile; fileRef = 81F4116F749633D5D40920F4 /* AGStringEncoding.h */; };
 		E1D6C1B31676D39000995666 /* AGBase32.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F410518A256C3F0B7D3755 /* AGBase32.m */; };
-		E1D6C1B41676D39000995666 /* AGBase32.h in Sources */ = {isa = PBXBuildFile; fileRef = 81F41C3A626C603D977F068A /* AGBase32.h */; };
 		E1F939CF165AA14500C5EB63 /* AGTotp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* AGTotp.m */; };
 		E1F939D1165AA14F00C5EB63 /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* AGOtp.m */; };
 /* End PBXBuildFile section */
@@ -316,14 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D6C1B11676D39000995666 /* AGStringEncoding.m in Sources */,
-				E1D6C1B21676D39000995666 /* AGStringEncoding.h in Sources */,
 				E1D6C1B31676D39000995666 /* AGBase32.m in Sources */,
-				E1D6C1B41676D39000995666 /* AGBase32.h in Sources */,
-				E19BA98616727DF200736639 /* AGTotp.h in Sources */,
-				E19BA98716727DF200736639 /* AGOtp.h in Sources */,
-				E19BA98816727DF200736639 /* AeroGearOTP.h in Sources */,
 				E19BA98316727DDC00736639 /* AGClock.m in Sources */,
-				E19BA98416727DDC00736639 /* AGClock.h in Sources */,
 				81F41258F05528DFC3EDD476 /* AGTotpTests.m in Sources */,
 				E1F939CF165AA14500C5EB63 /* AGTotp.m in Sources */,
 				E1F939D1165AA14F00C5EB63 /* AGOtp.m in Sources */,
