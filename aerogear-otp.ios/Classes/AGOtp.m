@@ -28,7 +28,7 @@ typedef enum {
 } Digits;
 
 
-const NSUInteger defaultDigits = 6;
+const uint32_t defaultDigits = 6;
 
 @interface AGOtp ()
 @property (readwrite, nonatomic, copy) NSData *secret;
@@ -76,11 +76,11 @@ const NSUInteger defaultDigits = 6;
 
   const char *ptr = [hash bytes];
   char const offset = ptr[hashLength-1] & 0x0f;
-  unsigned long truncatedHash =
-    NSSwapBigLongToHost(*((unsigned long *)&ptr[offset])) & 0x7fffffff;
-  unsigned long pinValue = truncatedHash % SIX;
+  uint32_t truncatedHash =
+    NSSwapBigIntToHost(*((uint32_t *)&ptr[offset])) & 0x7fffffff;
+  uint32_t pinValue = truncatedHash % SIX;
 
-  return [NSString stringWithFormat:@"%0*ld", defaultDigits, pinValue];
+  return [NSString stringWithFormat:@"%0*d", defaultDigits, pinValue];
 }
 
 @end
