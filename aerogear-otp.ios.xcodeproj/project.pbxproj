@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5700691681F3404B82D1B616 /* libPods-aerogear-otp.iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EB89E49E7843ECB5C2BAA9 /* libPods-aerogear-otp.iosTests.a */; };
-		6F303D3916E7967B00F88AC0 /* common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6F303D3816E7967B00F88AC0 /* common.xcconfig */; };
 		81F410675DF4BE98DD67260F /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */; };
 		81F411400E888F8F8FC747C3 /* AGTotp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41F70D8A686C1492A99EC /* AGTotp.h */; };
 		81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81F41AE49B44356348304329 /* InfoPlist.strings */; };
@@ -242,7 +241,7 @@
 		81F411BA5904484694D442E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 81F4135C0429595CE78B95FB /* Build configuration list for PBXProject "aerogear-otp.ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -268,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */,
-				6F303D3916E7967B00F88AC0 /* common.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +362,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
 				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "aerogear-otp.iosTests";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = octest;
@@ -377,6 +376,7 @@
 				DSTROOT = "/tmp/aerogear-otp.ios.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "aerogear-otp.ios";
 				SKIP_INSTALL = YES;
@@ -397,7 +397,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -424,7 +424,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -438,6 +438,7 @@
 				DSTROOT = "/tmp/aerogear-otp.ios.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "aerogear-otp.ios";
 				SKIP_INSTALL = YES;
@@ -455,6 +456,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
 				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "aerogear-otp.iosTests";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = octest;
