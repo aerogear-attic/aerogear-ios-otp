@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F41B0DE92C2117AB2F5685"
-               BuildableName = "aerogear-otp.iosTests.octest"
+               BuildableName = "aerogear-otp.iosTests.xctest"
                BlueprintName = "aerogear-otp.iosTests"
                ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
             </BuildableReference>
@@ -49,6 +49,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "81F412E1D1AC3AA31388DBC2"
+            BuildableName = "libaerogear-otp.ios.a"
+            BlueprintName = "aerogear-otp.ios"
+            ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

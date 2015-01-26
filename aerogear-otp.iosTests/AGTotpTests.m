@@ -16,12 +16,12 @@
 //  the License.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "AGTotp.h"
 #import "AGClock.h"
 #import "AGBase32.h"
 
-@interface AGTotpTests : SenTestCase
+@interface AGTotpTests : XCTestCase
 
 @end
 
@@ -54,7 +54,7 @@ NSDate *currentDate;
     AGTotp *generator
             = [[AGTotp alloc] initWithSecret:secretData];
 
-    STAssertEqualObjects(@"982812", [generator now:clock], @"Incorrect OTP");
+    XCTAssertEqualObjects(@"982812", [generator now:clock], @"Incorrect OTP");
 
 }
 

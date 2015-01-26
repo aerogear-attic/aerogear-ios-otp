@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "AGClock.h"
 
-@interface AGClockTests : SenTestCase
+@interface AGClockTests : XCTestCase
 
 @end
 
@@ -45,7 +45,7 @@ NSDate *currentDate;
     AGClock *clock = [[AGClock alloc] initWithDate:currentDate];
     uint64_t interval = [clock currentInterval];
     NSLog(@"Test Interval: %qu", interval);
-    STAssertEquals((uint64_t)45201600, interval, @"Incorrect clock interval");
+    XCTAssertEqual((uint64_t)45201600, interval, @"Incorrect clock interval");
 }
 
 @end
