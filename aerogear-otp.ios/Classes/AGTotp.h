@@ -53,6 +53,17 @@
 - (id)initWithSecret:(NSData *)secret;
 
 /**
+ * Returns an AGTOtp object initialized with a non-default digit length and secret specified by the given string.
+ *
+ * @param digits The number of digits to use in the returned OTP code (min. 6, max. 8)
+ * @param secret The secret to use.
+ *
+ * @return An AGTotp object initialized by the specified secret.
+ */
+- (id)initWithDigits:(uint32_t)digits andSecret:(NSData *)secret;
+
+
+/**
  * Generate an TOTP token using the current time.
  * 
  * @returns An NSString that contains the token with leading zero-padding as required.

@@ -49,15 +49,27 @@
 @interface AGOtp : NSObject
 
 @property (readonly, nonatomic, copy) NSData *secret;
+@property (readonly, nonatomic, assign) uint32_t digits;
 
 /**
  * Returns an AGOtp object initialized with a secret specified by the given string.
  *
  * @param secret The secret to use.
  *
- * @return An AGTotp object initialized by the specified secret.
+ * @return An AGotp object initialized by the specified secret.
  */
 - (id)initWithSecret:(NSData *)secret;
+
+/**
+ * Returns an AGOtp object initialized with a non-default digit length and secret specified by the given string.
+ *
+ * @param digits The number of digits to use in the returned OTP code (min. 6, max. 8)
+ * @param secret The secret to use.
+ *
+ * @return An AGotp object initialized by the specified secret.
+ */
+- (id)initWithDigits:(uint32_t)digits andSecret:(NSData *)secret;
+
 
 /**
  * Generate an OTP token using the specified counter.
