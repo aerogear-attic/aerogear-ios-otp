@@ -1,1192 +1,520 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>340EF589166B7EC4BE64A177</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>3721CD94A49F9FE9A71B4B06</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-aerogear-otp.iosTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-aerogear-otp.iosTests/Pods-aerogear-otp.iosTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>55183D61952EC710A4FBAC31</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-aerogear-otp.iosTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>57A0DA83165E2CFA00F6965A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AeroGearOTP.h</string>
-			<key>path</key>
-			<string>Classes/AeroGearOTP.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5E8B80286A30512348AC177F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDEE05E304D7DD67AD2F7F2B</string>
-				<string>3721CD94A49F9FE9A71B4B06</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6F303D3816E7967B00F88AC0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>common.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F410518A256C3F0B7D3755</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AGBase32.m</string>
-			<key>path</key>
-			<string>Classes/AGBase32.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F410675DF4BE98DD67260F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F418EFDDBDCB1AEDB7E5CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F4106D1F3FE8FB17BDE31F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>81F410AF524515CE7BC278A9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>EDEE05E304D7DD67AD2F7F2B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
-					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
-					<string>"$(PLATFORM_DIR)/Developer/Library/Frameworks"</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>aerogear-otp.ios/aerogear-otp.ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>aerogear-otp.iosTests</string>
-				<key>USER_HEADER_SEARCH_PATHS</key>
-				<string>"${PROJECT_DIR}/Pods"/**</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>81F410BEDA29A4E040C6596B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string># Run the unit tests in this test bundle.
-"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
-</string>
-		</dict>
-		<key>81F411400E888F8F8FC747C3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41F70D8A686C1492A99EC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F4116F749633D5D40920F4</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AGStringEncoding.h</string>
-			<key>path</key>
-			<string>Classes/AGStringEncoding.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F411BA5904484694D442E0</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastTestingUpgradeCheck</key>
-				<string>0610</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>81F4135C0429595CE78B95FB</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>81F41C8363C8B4FF82940B04</string>
-			<key>productRefGroup</key>
-			<string>81F415AECDD9C8C189F9DF76</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>81F412E1D1AC3AA31388DBC2</string>
-				<string>81F41B0DE92C2117AB2F5685</string>
-			</array>
-		</dict>
-		<key>81F411FF838A6B5FD400910F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41AE49B44356348304329</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F41214CF9DDC5E95CC61D0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AGOtp.h</string>
-			<key>path</key>
-			<string>Classes/AGOtp.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41258F05528DFC3EDD476</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F413635101311EA2858A9A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F4129254F03A22F986AA87</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>81F41CDD33B46BB878AA9624</string>
-				<string>81F41B18288687AEA611B763</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>81F412E1D1AC3AA31388DBC2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>81F4129254F03A22F986AA87</string>
-			<key>buildPhases</key>
-			<array>
-				<string>81F41936F323608E71AAF41D</string>
-				<string>81F419E2DE82351CAF39B84B</string>
-				<string>81F417FD846DF60F5EE8A5B7</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>aerogear-otp.ios</string>
-			<key>productName</key>
-			<string>aerogear-otp.ios</string>
-			<key>productReference</key>
-			<string>81F41621D94B6B79552689A3</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>81F4135C0429595CE78B95FB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>81F41B860976BAB0FFA95788</string>
-				<string>81F41CD032B5B7899B3A513D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>81F413635101311EA2858A9A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AGTotpTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41371A9713B70DC19ED87</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E1D6C1B11676D39000995666</string>
-				<string>E1D6C1B31676D39000995666</string>
-				<string>E19BA98316727DDC00736639</string>
-				<string>81F41258F05528DFC3EDD476</string>
-				<string>E1F939CF165AA14500C5EB63</string>
-				<string>E1F939D1165AA14F00C5EB63</string>
-				<string>E11169A216724E6900C07264</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>81F41388A888F2535026DDEE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81F41B5BE5FFADC666E61AA4</string>
-				<string>81F413635101311EA2858A9A</string>
-				<string>E11169A116724E6900C07264</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>aerogear-otp.iosTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41439DA438E3AA36ADD26</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41C3A626C603D977F068A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F4152394D09E48D35C733C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F415D53FE00D394660FECD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F415AECDD9C8C189F9DF76</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81F41621D94B6B79552689A3</string>
-				<string>81F41DAAA0F339CAA4A45113</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F415D53FE00D394660FECD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AGStringEncoding.m</string>
-			<key>path</key>
-			<string>Classes/AGStringEncoding.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41619A751E93404EB6E4B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AGTotp.m</string>
-			<key>path</key>
-			<string>Classes/AGTotp.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41621D94B6B79552689A3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libaerogear-otp.ios.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>81F416E3494E87BD1B604831</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>81F4183B5599B1F00B7404BD</string>
-				<string>81F41756774CCFE0E443575E</string>
-				<string>C45A746F4A683D7C6FE9F60C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>81F4170EC4C2307C435655A3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>81F410AF524515CE7BC278A9</string>
-				<string>81F41CFF5D524408C8725BE5</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>81F41756774CCFE0E443575E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41D8D0107C4A79962F802</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F417C839AD9C2AC8FA1BA3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AGClock.h</string>
-			<key>path</key>
-			<string>Classes/AGClock.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F417FD846DF60F5EE8A5B7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/${PRODUCT_NAME}</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>81F411400E888F8F8FC747C3</string>
-				<string>81F41877C7A276B7428ADFA7</string>
-				<string>81F41936F0B88A61F022511A</string>
-				<string>81F41A44E73B163C5C4B95BA</string>
-				<string>81F41439DA438E3AA36ADD26</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>81F4183B5599B1F00B7404BD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F4106D1F3FE8FB17BDE31F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F41877C7A276B7428ADFA7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41214CF9DDC5E95CC61D0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F418EFDDBDCB1AEDB7E5CB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AGClock.m</string>
-			<key>path</key>
-			<string>Classes/AGClock.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F4190F94A95991D47E1DA5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>81F411FF838A6B5FD400910F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>81F41936F0B88A61F022511A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F417C839AD9C2AC8FA1BA3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F41936F323608E71AAF41D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>81F41B6CCA6DEFDD3B02DDDB</string>
-				<string>81F41EF24351CF2FDE3EAB37</string>
-				<string>81F410675DF4BE98DD67260F</string>
-				<string>81F4152394D09E48D35C733C</string>
-				<string>81F419A16AB0420B039EEA1A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>81F419A16AB0420B039EEA1A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F410518A256C3F0B7D3755</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F419E2DE82351CAF39B84B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>81F41E8603F38A15A3D6DE7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>81F41A09B543FA84D4F3E6FF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AGOtp.m</string>
-			<key>path</key>
-			<string>Classes/AGOtp.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41A339F6C8F87B8839281</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>aerogear-otp.ios-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41A44E73B163C5C4B95BA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F4116F749633D5D40920F4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F41A4F242A5F3F8A0988CD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81F41CDC9BA237C5509D7034</string>
-				<string>A0AD30951677D2ED00104932</string>
-				<string>57A0DA83165E2CFA00F6965A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>aerogear-otp.ios</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41A9BDB3BA0CCB64675D3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41AE49B44356348304329</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81F41A9BDB3BA0CCB64675D3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41B0DE92C2117AB2F5685</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>81F4170EC4C2307C435655A3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>340EF589166B7EC4BE64A177</string>
-				<string>81F41371A9713B70DC19ED87</string>
-				<string>81F416E3494E87BD1B604831</string>
-				<string>81F4190F94A95991D47E1DA5</string>
-				<string>81F410BEDA29A4E040C6596B</string>
-				<string>96FD797C33904378828CE6EC</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>81F41B220FACB32A3BFE2685</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>aerogear-otp.iosTests</string>
-			<key>productName</key>
-			<string>aerogear-otp.iosTests</string>
-			<key>productReference</key>
-			<string>81F41DAAA0F339CAA4A45113</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>81F41B18288687AEA611B763</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6F303D3816E7967B00F88AC0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/aerogear-otp.ios.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>aerogear-otp.ios/aerogear-otp.ios-Prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>aerogear-otp.ios</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>81F41B220FACB32A3BFE2685</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>81F412E1D1AC3AA31388DBC2</string>
-			<key>targetProxy</key>
-			<string>81F41D3442F738087AC13E89</string>
-		</dict>
-		<key>81F41B5BE5FFADC666E61AA4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81F41C79681C1E7FC6E18233</string>
-				<string>81F41AE49B44356348304329</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41B6CCA6DEFDD3B02DDDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41619A751E93404EB6E4B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F41B860976BAB0FFA95788</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>81F41C3A626C603D977F068A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AGBase32.h</string>
-			<key>path</key>
-			<string>Classes/AGBase32.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41C79681C1E7FC6E18233</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>aerogear-otp.iosTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41C8363C8B4FF82940B04</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6F303D3816E7967B00F88AC0</string>
-				<string>81F415AECDD9C8C189F9DF76</string>
-				<string>81F41D392730CBCAA494FACD</string>
-				<string>81F41A4F242A5F3F8A0988CD</string>
-				<string>81F41388A888F2535026DDEE</string>
-				<string>5E8B80286A30512348AC177F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41CD032B5B7899B3A513D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>81F41CDC9BA237C5509D7034</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81F41A339F6C8F87B8839281</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41CDD33B46BB878AA9624</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6F303D3816E7967B00F88AC0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/aerogear-otp.ios.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>aerogear-otp.ios/aerogear-otp.ios-Prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>aerogear-otp.ios</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>81F41CFF5D524408C8725BE5</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3721CD94A49F9FE9A71B4B06</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
-					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
-					<string>"$(PLATFORM_DIR)/Developer/Library/Frameworks"</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>aerogear-otp.ios/aerogear-otp.ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>aerogear-otp.iosTests</string>
-				<key>USER_HEADER_SEARCH_PATHS</key>
-				<string>"${PROJECT_DIR}/Pods"/**</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>81F41D3442F738087AC13E89</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>81F411BA5904484694D442E0</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>81F412E1D1AC3AA31388DBC2</string>
-			<key>remoteInfo</key>
-			<string>aerogear-otp.ios</string>
-		</dict>
-		<key>81F41D392730CBCAA494FACD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81F41D8D0107C4A79962F802</string>
-				<string>81F4106D1F3FE8FB17BDE31F</string>
-				<string>55183D61952EC710A4FBAC31</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F41D8D0107C4A79962F802</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>81F41DAAA0F339CAA4A45113</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>aerogear-otp.iosTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>81F41E8603F38A15A3D6DE7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41D8D0107C4A79962F802</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F41EF24351CF2FDE3EAB37</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41A09B543FA84D4F3E6FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81F41F70D8A686C1492A99EC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AGTotp.h</string>
-			<key>path</key>
-			<string>Classes/AGTotp.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>96FD797C33904378828CE6EC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-aerogear-otp.iosTests/Pods-aerogear-otp.iosTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A0AD30951677D2ED00104932</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81F41F70D8A686C1492A99EC</string>
-				<string>81F41619A751E93404EB6E4B</string>
-				<string>81F41214CF9DDC5E95CC61D0</string>
-				<string>81F41A09B543FA84D4F3E6FF</string>
-				<string>81F417C839AD9C2AC8FA1BA3</string>
-				<string>81F418EFDDBDCB1AEDB7E5CB</string>
-				<string>81F4116F749633D5D40920F4</string>
-				<string>81F415D53FE00D394660FECD</string>
-				<string>81F41C3A626C603D977F068A</string>
-				<string>81F410518A256C3F0B7D3755</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C45A746F4A683D7C6FE9F60C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>55183D61952EC710A4FBAC31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E11169A116724E6900C07264</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AGClockTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E11169A216724E6900C07264</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E11169A116724E6900C07264</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E19BA98316727DDC00736639</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F418EFDDBDCB1AEDB7E5CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1D6C1B11676D39000995666</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F415D53FE00D394660FECD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1D6C1B31676D39000995666</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F410518A256C3F0B7D3755</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1F939CF165AA14500C5EB63</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41619A751E93404EB6E4B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E1F939D1165AA14F00C5EB63</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81F41A09B543FA84D4F3E6FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDEE05E304D7DD67AD2F7F2B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-aerogear-otp.iosTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-aerogear-otp.iosTests/Pods-aerogear-otp.iosTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>81F411BA5904484694D442E0</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81F410675DF4BE98DD67260F /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */; };
+		81F411400E888F8F8FC747C3 /* AGTotp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41F70D8A686C1492A99EC /* AGTotp.h */; };
+		81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81F41AE49B44356348304329 /* InfoPlist.strings */; };
+		81F41258F05528DFC3EDD476 /* AGTotpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F413635101311EA2858A9A /* AGTotpTests.m */; };
+		81F41439DA438E3AA36ADD26 /* AGBase32.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41C3A626C603D977F068A /* AGBase32.h */; };
+		81F4152394D09E48D35C733C /* AGStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F415D53FE00D394660FECD /* AGStringEncoding.m */; };
+		81F41756774CCFE0E443575E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F41D8D0107C4A79962F802 /* Foundation.framework */; };
+		81F4183B5599B1F00B7404BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F4106D1F3FE8FB17BDE31F /* UIKit.framework */; };
+		81F41877C7A276B7428ADFA7 /* AGOtp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F41214CF9DDC5E95CC61D0 /* AGOtp.h */; };
+		81F41936F0B88A61F022511A /* AGClock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F417C839AD9C2AC8FA1BA3 /* AGClock.h */; };
+		81F419A16AB0420B039EEA1A /* AGBase32.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F410518A256C3F0B7D3755 /* AGBase32.m */; };
+		81F41A44E73B163C5C4B95BA /* AGStringEncoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81F4116F749633D5D40920F4 /* AGStringEncoding.h */; };
+		81F41B6CCA6DEFDD3B02DDDB /* AGTotp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* AGTotp.m */; };
+		81F41E8603F38A15A3D6DE7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F41D8D0107C4A79962F802 /* Foundation.framework */; };
+		81F41EF24351CF2FDE3EAB37 /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* AGOtp.m */; };
+		C45A746F4A683D7C6FE9F60C /* libPods-aerogear-otp.iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55183D61952EC710A4FBAC31 /* libPods-aerogear-otp.iosTests.a */; };
+		E11169A216724E6900C07264 /* AGClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E11169A116724E6900C07264 /* AGClockTests.m */; };
+		E19BA98316727DDC00736639 /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */; };
+		E1D6C1B11676D39000995666 /* AGStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F415D53FE00D394660FECD /* AGStringEncoding.m */; };
+		E1D6C1B31676D39000995666 /* AGBase32.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F410518A256C3F0B7D3755 /* AGBase32.m */; };
+		E1F939CF165AA14500C5EB63 /* AGTotp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41619A751E93404EB6E4B /* AGTotp.m */; };
+		E1F939D1165AA14F00C5EB63 /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F41A09B543FA84D4F3E6FF /* AGOtp.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81F41D3442F738087AC13E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81F411BA5904484694D442E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81F412E1D1AC3AA31388DBC2;
+			remoteInfo = "aerogear-otp.ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81F417FD846DF60F5EE8A5B7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				81F411400E888F8F8FC747C3 /* AGTotp.h in CopyFiles */,
+				81F41877C7A276B7428ADFA7 /* AGOtp.h in CopyFiles */,
+				81F41936F0B88A61F022511A /* AGClock.h in CopyFiles */,
+				81F41A44E73B163C5C4B95BA /* AGStringEncoding.h in CopyFiles */,
+				81F41439DA438E3AA36ADD26 /* AGBase32.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3721CD94A49F9FE9A71B4B06 /* Pods-aerogear-otp.iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aerogear-otp.iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aerogear-otp.iosTests/Pods-aerogear-otp.iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55183D61952EC710A4FBAC31 /* libPods-aerogear-otp.iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-aerogear-otp.iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A0DA83165E2CFA00F6965A /* AeroGearOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeroGearOTP.h; path = Classes/AeroGearOTP.h; sourceTree = "<group>"; };
+		6F303D3816E7967B00F88AC0 /* common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = common.xcconfig; sourceTree = "<group>"; };
+		81F410518A256C3F0B7D3755 /* AGBase32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGBase32.m; path = Classes/AGBase32.m; sourceTree = "<group>"; };
+		81F4106D1F3FE8FB17BDE31F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		81F4116F749633D5D40920F4 /* AGStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGStringEncoding.h; path = Classes/AGStringEncoding.h; sourceTree = "<group>"; };
+		81F41214CF9DDC5E95CC61D0 /* AGOtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGOtp.h; path = Classes/AGOtp.h; sourceTree = "<group>"; };
+		81F413635101311EA2858A9A /* AGTotpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGTotpTests.m; sourceTree = "<group>"; };
+		81F415D53FE00D394660FECD /* AGStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGStringEncoding.m; path = Classes/AGStringEncoding.m; sourceTree = "<group>"; };
+		81F41619A751E93404EB6E4B /* AGTotp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTotp.m; path = Classes/AGTotp.m; sourceTree = "<group>"; };
+		81F41621D94B6B79552689A3 /* libaerogear-otp.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libaerogear-otp.ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F417C839AD9C2AC8FA1BA3 /* AGClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGClock.h; path = Classes/AGClock.h; sourceTree = "<group>"; };
+		81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGClock.m; path = Classes/AGClock.m; sourceTree = "<group>"; };
+		81F41A09B543FA84D4F3E6FF /* AGOtp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGOtp.m; path = Classes/AGOtp.m; sourceTree = "<group>"; };
+		81F41A339F6C8F87B8839281 /* aerogear-otp.ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aerogear-otp.ios-Prefix.pch"; sourceTree = "<group>"; };
+		81F41A9BDB3BA0CCB64675D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		81F41C3A626C603D977F068A /* AGBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGBase32.h; path = Classes/AGBase32.h; sourceTree = "<group>"; };
+		81F41C79681C1E7FC6E18233 /* aerogear-otp.iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aerogear-otp.iosTests-Info.plist"; sourceTree = "<group>"; };
+		81F41D8D0107C4A79962F802 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		81F41DAAA0F339CAA4A45113 /* aerogear-otp.iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aerogear-otp.iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F41F70D8A686C1492A99EC /* AGTotp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTotp.h; path = Classes/AGTotp.h; sourceTree = "<group>"; };
+		E11169A116724E6900C07264 /* AGClockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGClockTests.m; sourceTree = "<group>"; };
+		EDEE05E304D7DD67AD2F7F2B /* Pods-aerogear-otp.iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aerogear-otp.iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-aerogear-otp.iosTests/Pods-aerogear-otp.iosTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81F416E3494E87BD1B604831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F4183B5599B1F00B7404BD /* UIKit.framework in Frameworks */,
+				81F41756774CCFE0E443575E /* Foundation.framework in Frameworks */,
+				C45A746F4A683D7C6FE9F60C /* libPods-aerogear-otp.iosTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F419E2DE82351CAF39B84B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F41E8603F38A15A3D6DE7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E8B80286A30512348AC177F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDEE05E304D7DD67AD2F7F2B /* Pods-aerogear-otp.iosTests.release.xcconfig */,
+				3721CD94A49F9FE9A71B4B06 /* Pods-aerogear-otp.iosTests.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81F41388A888F2535026DDEE /* aerogear-otp.iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				81F41B5BE5FFADC666E61AA4 /* Supporting Files */,
+				81F413635101311EA2858A9A /* AGTotpTests.m */,
+				E11169A116724E6900C07264 /* AGClockTests.m */,
+			);
+			path = "aerogear-otp.iosTests";
+			sourceTree = "<group>";
+		};
+		81F415AECDD9C8C189F9DF76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81F41621D94B6B79552689A3 /* libaerogear-otp.ios.a */,
+				81F41DAAA0F339CAA4A45113 /* aerogear-otp.iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81F41A4F242A5F3F8A0988CD /* aerogear-otp.ios */ = {
+			isa = PBXGroup;
+			children = (
+				81F41CDC9BA237C5509D7034 /* Supporting Files */,
+				A0AD30951677D2ED00104932 /* Classes */,
+				57A0DA83165E2CFA00F6965A /* AeroGearOTP.h */,
+			);
+			path = "aerogear-otp.ios";
+			sourceTree = "<group>";
+		};
+		81F41B5BE5FFADC666E61AA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81F41C79681C1E7FC6E18233 /* aerogear-otp.iosTests-Info.plist */,
+				81F41AE49B44356348304329 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81F41C8363C8B4FF82940B04 = {
+			isa = PBXGroup;
+			children = (
+				6F303D3816E7967B00F88AC0 /* common.xcconfig */,
+				81F415AECDD9C8C189F9DF76 /* Products */,
+				81F41D392730CBCAA494FACD /* Frameworks */,
+				81F41A4F242A5F3F8A0988CD /* aerogear-otp.ios */,
+				81F41388A888F2535026DDEE /* aerogear-otp.iosTests */,
+				5E8B80286A30512348AC177F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		81F41CDC9BA237C5509D7034 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81F41A339F6C8F87B8839281 /* aerogear-otp.ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81F41D392730CBCAA494FACD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81F41D8D0107C4A79962F802 /* Foundation.framework */,
+				81F4106D1F3FE8FB17BDE31F /* UIKit.framework */,
+				55183D61952EC710A4FBAC31 /* libPods-aerogear-otp.iosTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0AD30951677D2ED00104932 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				81F41F70D8A686C1492A99EC /* AGTotp.h */,
+				81F41619A751E93404EB6E4B /* AGTotp.m */,
+				81F41214CF9DDC5E95CC61D0 /* AGOtp.h */,
+				81F41A09B543FA84D4F3E6FF /* AGOtp.m */,
+				81F417C839AD9C2AC8FA1BA3 /* AGClock.h */,
+				81F418EFDDBDCB1AEDB7E5CB /* AGClock.m */,
+				81F4116F749633D5D40920F4 /* AGStringEncoding.h */,
+				81F415D53FE00D394660FECD /* AGStringEncoding.m */,
+				81F41C3A626C603D977F068A /* AGBase32.h */,
+				81F410518A256C3F0B7D3755 /* AGBase32.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81F412E1D1AC3AA31388DBC2 /* aerogear-otp.ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F4129254F03A22F986AA87 /* Build configuration list for PBXNativeTarget "aerogear-otp.ios" */;
+			buildPhases = (
+				81F41936F323608E71AAF41D /* Sources */,
+				81F419E2DE82351CAF39B84B /* Frameworks */,
+				81F417FD846DF60F5EE8A5B7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aerogear-otp.ios";
+			productName = "aerogear-otp.ios";
+			productReference = 81F41621D94B6B79552689A3 /* libaerogear-otp.ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		81F41B0DE92C2117AB2F5685 /* aerogear-otp.iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F4170EC4C2307C435655A3 /* Build configuration list for PBXNativeTarget "aerogear-otp.iosTests" */;
+			buildPhases = (
+				340EF589166B7EC4BE64A177 /* Check Pods Manifest.lock */,
+				81F41371A9713B70DC19ED87 /* Sources */,
+				81F416E3494E87BD1B604831 /* Frameworks */,
+				81F4190F94A95991D47E1DA5 /* Resources */,
+				96FD797C33904378828CE6EC /* Copy Pods Resources */,
+				54E967ADB9E0FDD6FCF9DA11 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81F41B220FACB32A3BFE2685 /* PBXTargetDependency */,
+			);
+			name = "aerogear-otp.iosTests";
+			productName = "aerogear-otp.iosTests";
+			productReference = 81F41DAAA0F339CAA4A45113 /* aerogear-otp.iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81F411BA5904484694D442E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 81F4135C0429595CE78B95FB /* Build configuration list for PBXProject "aerogear-otp.ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 81F41C8363C8B4FF82940B04;
+			productRefGroup = 81F415AECDD9C8C189F9DF76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81F412E1D1AC3AA31388DBC2 /* aerogear-otp.ios */,
+				81F41B0DE92C2117AB2F5685 /* aerogear-otp.iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81F4190F94A95991D47E1DA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F411FF838A6B5FD400910F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		340EF589166B7EC4BE64A177 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54E967ADB9E0FDD6FCF9DA11 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aerogear-otp.iosTests/Pods-aerogear-otp.iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96FD797C33904378828CE6EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aerogear-otp.iosTests/Pods-aerogear-otp.iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81F41371A9713B70DC19ED87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D6C1B11676D39000995666 /* AGStringEncoding.m in Sources */,
+				E1D6C1B31676D39000995666 /* AGBase32.m in Sources */,
+				E19BA98316727DDC00736639 /* AGClock.m in Sources */,
+				81F41258F05528DFC3EDD476 /* AGTotpTests.m in Sources */,
+				E1F939CF165AA14500C5EB63 /* AGTotp.m in Sources */,
+				E1F939D1165AA14F00C5EB63 /* AGOtp.m in Sources */,
+				E11169A216724E6900C07264 /* AGClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F41936F323608E71AAF41D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F41B6CCA6DEFDD3B02DDDB /* AGTotp.m in Sources */,
+				81F41EF24351CF2FDE3EAB37 /* AGOtp.m in Sources */,
+				81F410675DF4BE98DD67260F /* AGClock.m in Sources */,
+				81F4152394D09E48D35C733C /* AGStringEncoding.m in Sources */,
+				81F419A16AB0420B039EEA1A /* AGBase32.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81F41B220FACB32A3BFE2685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81F412E1D1AC3AA31388DBC2 /* aerogear-otp.ios */;
+			targetProxy = 81F41D3442F738087AC13E89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81F41AE49B44356348304329 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81F41A9BDB3BA0CCB64675D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81F410AF524515CE7BC278A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEE05E304D7DD67AD2F7F2B /* Pods-aerogear-otp.iosTests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
+				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.abstractj.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "aerogear-otp.iosTests";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		81F41B18288687AEA611B763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F303D3816E7967B00F88AC0 /* common.xcconfig */;
+			buildSettings = {
+				DSTROOT = "/tmp/aerogear-otp.ios.dst";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "aerogear-otp.ios";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		81F41B860976BAB0FFA95788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81F41CD032B5B7899B3A513D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		81F41CDD33B46BB878AA9624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F303D3816E7967B00F88AC0 /* common.xcconfig */;
+			buildSettings = {
+				DSTROOT = "/tmp/aerogear-otp.ios.dst";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "aerogear-otp.ios";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		81F41CFF5D524408C8725BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3721CD94A49F9FE9A71B4B06 /* Pods-aerogear-otp.iosTests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
+				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.abstractj.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "aerogear-otp.iosTests";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81F4129254F03A22F986AA87 /* Build configuration list for PBXNativeTarget "aerogear-otp.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F41CDD33B46BB878AA9624 /* Release */,
+				81F41B18288687AEA611B763 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81F4135C0429595CE78B95FB /* Build configuration list for PBXProject "aerogear-otp.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F41B860976BAB0FFA95788 /* Release */,
+				81F41CD032B5B7899B3A513D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81F4170EC4C2307C435655A3 /* Build configuration list for PBXNativeTarget "aerogear-otp.iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F410AF524515CE7BC278A9 /* Release */,
+				81F41CFF5D524408C8725BE5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81F411BA5904484694D442E0 /* Project object */;
+}
