@@ -381,7 +381,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDEE05E304D7DD67AD2F7F2B /* Pods-aerogear-otp.iosTests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
 				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
@@ -473,7 +473,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3721CD94A49F9FE9A71B4B06 /* Pods-aerogear-otp.iosTests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "aerogear-otp.ios/aerogear-otp.ios-Prefix.pch";
 				INFOPLIST_FILE = "aerogear-otp.iosTests/aerogear-otp.iosTests-Info.plist";
