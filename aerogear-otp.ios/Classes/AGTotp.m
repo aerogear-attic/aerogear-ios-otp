@@ -33,6 +33,12 @@ const NSUInteger defaultInterval = 30;
     return (self);
 }
 
+- (id)initWithDigits:(uint32_t)digits andSecret:(NSData *)secret {
+    if ((self = [super initWithDigits:digits andSecret:secret])) {
+    }
+    return (self);
+}
+
 - (NSString *)generateOTP {
     return [self now];
 }

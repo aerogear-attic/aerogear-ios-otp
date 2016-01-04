@@ -21,22 +21,19 @@
 
 #import <CommonCrypto/CommonCrypto.h>
 
-typedef enum {
-    SIX   = 1000000,
-    SEVEN = 10000000,
-    EIGHT = 100000000,
-} Digits;
-
-
+const uint32_t digitsModLut[] = { 0, 0, 0, 0, 0, 0, 1000000, 10000000, 100000000 };
 const uint32_t defaultDigits = 6;
 
 @interface AGOtp ()
 @property (readwrite, nonatomic, copy) NSData *secret;
 @end
 
-@implementation AGOtp
+@implementation AGOtp {
+    uint32_t digitsMod_;
+}
 
 @synthesize secret = secret_;
+@synthesize digits = digits_;
 
 - (id)init {
   [self doesNotRecognizeSelector:_cmd];
@@ -45,7 +42,19 @@ const uint32_t defaultDigits = 6;
 
 - (id)initWithSecret:(NSData *)secret {
   if ((self = [super init])) {
-    secret_ = [secret copy];
+    secret_    = [secret copy];
+    digits_    = defaultDigits;
+    digitsMod_ = digitsModLut[defaultDigits];
+  }
+  return self;
+}
+
+- (id)initWithDigits:(uint32_t)digits andSecret:(NSData *)secret {
+  NSAssert((digits >= 6) && (digits <= 8),@"digits can only be between 6 and 8");
+  if ((self = [super init])) {
+    secret_    = [secret copy];
+    digits_    = digits;
+    digitsMod_ = digitsModLut[digits];
   }
   return self;
 }
@@ -78,9 +87,9 @@ const uint32_t defaultDigits = 6;
   char const offset = ptr[hashLength-1] & 0x0f;
   uint32_t truncatedHash =
     NSSwapBigIntToHost(*((uint32_t *)&ptr[offset])) & 0x7fffffff;
-  uint32_t pinValue = truncatedHash % SIX;
+  uint32_t pinValue = truncatedHash % digitsMod_;
 
-  return [NSString stringWithFormat:@"%0*d", defaultDigits, pinValue];
+  return [NSString stringWithFormat:@"%0*d", digits_, pinValue];
 }
 
 @end
