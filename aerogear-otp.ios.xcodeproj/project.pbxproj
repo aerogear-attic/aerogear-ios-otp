@@ -225,12 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81F4170EC4C2307C435655A3 /* Build configuration list for PBXNativeTarget "aerogear-otp.iosTests" */;
 			buildPhases = (
-				340EF589166B7EC4BE64A177 /* Check Pods Manifest.lock */,
+				340EF589166B7EC4BE64A177 /* [CP] Check Pods Manifest.lock */,
 				81F41371A9713B70DC19ED87 /* Sources */,
 				81F416E3494E87BD1B604831 /* Frameworks */,
 				81F4190F94A95991D47E1DA5 /* Resources */,
-				96FD797C33904378828CE6EC /* Copy Pods Resources */,
-				54E967ADB9E0FDD6FCF9DA11 /* Embed Pods Frameworks */,
+				96FD797C33904378828CE6EC /* [CP] Copy Pods Resources */,
+				54E967ADB9E0FDD6FCF9DA11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,14 +281,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		340EF589166B7EC4BE64A177 /* Check Pods Manifest.lock */ = {
+		340EF589166B7EC4BE64A177 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +296,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		54E967ADB9E0FDD6FCF9DA11 /* Embed Pods Frameworks */ = {
+		54E967ADB9E0FDD6FCF9DA11 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +311,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aerogear-otp.iosTests/Pods-aerogear-otp.iosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96FD797C33904378828CE6EC /* Copy Pods Resources */ = {
+		96FD797C33904378828CE6EC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
