@@ -1,6 +1,6 @@
 project 'aerogear-otp.ios.xcodeproj'
 
-platform :ios, '7.0'
+platform :ios, '9.0'
 
 target 'aerogear-otp.iosTests' do
     pod 'OCMock', '2.2.3'
