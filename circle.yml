@@ -2,8 +2,8 @@ machine:
   xcode:
     version: 9.0
   environment:
-    XCODE_WORKSPACE: "aerogear-otp.ios.xcworkspace"
-    XCODE_SCHEME: "aerogear-otp.ios"
+    XCODE_WORKSPACE: "AeroGearOTP.xcworkspace"
+    XCODE_SCHEME: "AeroGearOTP"
     SIMULATOR: "iPhone 7"
     OS: "11.0.1"
 
