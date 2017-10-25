@@ -5,7 +5,7 @@ machine:
     XCODE_WORKSPACE: "aerogear-otp.ios.xcworkspace"
     XCODE_SCHEME: "aerogear-otp.ios"
     SIMULATOR: "iPhone 7"
-    OS: "11.0"
+    OS: "11.0.1"
 
 test:
   override:
@@ -21,3 +21,6 @@ test:
         clean build |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+
+  post: 
+    - bash <(curl -s https://codecov.io/bash)

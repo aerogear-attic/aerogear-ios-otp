@@ -1,35 +1,71 @@
-# aerogear-otp-ios [![Build Status](https://travis-ci.org/aerogear/aerogear-otp-ios.png)](https://travis-ci.org/aerogear/aerogear-otp-ios)
+# aerogear-ios-otp
 
-## One Time Password API
+![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)
+[![circle-ci](https://img.shields.io/circleci/project/github/aerogear/aerogear-ios-otp/master.svg)](https://circleci.com/gh/aerogear/aerogear-ios-otp)
+[![License](https://img.shields.io/badge/-Apache%202.0-blue.svg)](https://opensource.org/s/Apache-2.0)
+[![GitHub release](https://img.shields.io/github/release/aerogear/aerogear-ios-otp.svg)](https://github.com/aerogear/aerogear-ios-otp/releases)
+[![CocoaPods](https://img.shields.io/cocoapods/v/AeroGearOTP.svg)](https://cocoapods.org/pods/AeroGearOTP)
+[![Platform](https://img.shields.io/cocoapods/p/AeroGearOTP.svg)](https://cocoapods.org/pods/AeroGearOTP)
 
-A Objective-C iOS library for generating one time passwords according to [RFC 6238](http://tools.ietf.org/html/rfc6238).
+One time password generator library according to [RFC 6238](http://tools.ietf.org/html/rfc6238).
 
-|                 | Project Info  |
-| --------------- | ------------- |
-| License:        | Apache License, Version 2.0  |
-| Build:          | CocoaPods  |
-| Documentation:  | http://aerogear.org/ios/  |
-| Issue tracker:  | https://issues.jboss.org/browse/AGIOS  |
-| Mailing lists:  | [aerogear-users](http://aerogear-users.1116366.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-users))  |
-|                 | [aerogear-dev](http://aerogear-dev.1069024.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-dev))  |
+|                 | Project Info                                 |
+| --------------- | -------------------------------------------- |
+| License:        | Apache License, Version 2.0                  |
+| Build:          | CocoaPods                                    |
+| Languague:      | Objective-C                                  |
+| Documentation:  | http://aerogear.org/ios/                     |
+| Issue tracker:  | https://issues.jboss.org/browse/AGIOS        |
+| Mailing lists:  | [aerogear-users](http://aerogear-users.1116366.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-users))                            |
+|                 | [aerogear-dev](http://aerogear-dev.1069024.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-dev))                              |
 
-## Getting started
+## Table of Content
 
-The project requires [CocoaPods](http://cocoapods.org/) for dependency management;
+* [Features](#features)
+* [Installation](#installation)
+  * [CocoaPods](#cocoapods)
+* [Usage](#usage)
+* [Documentation](#documentation)
+* [Demo apps](#demo-apps)
+* [Development](#development)
+* [Questions?](#questions)
+* [Found a bug?](#found-a-bug)
 
-_BEFORE_ you can run the tests, you need to run the following command:
+## Features
 
-    pod install
+[TODO]
 
-Now you are almost done! You just need to open the ```aerogear-otp.ios.xcworkspace``` in order to start hacking on the library code!
+## Installation
 
-For more details, please refer to our [documentation](http://aerogear.org/docs/specs/aerogear-security-otp/)
+### CocoaPods
 
-Enjoy!
+In your `Podfile` add:
+
+```bash
+pod 'AeroGearOTP'
+```
+
+and then:
+
+```bash
+pod install
+```
+
+to install your dependencies
+
+## Usage
+
+[TODO]
 
 ## Documentation
 
-For more details about the current release, please consult [our documentation](http://aerogear.org/ios/).
+For more details about that please consult [our documentation](http://aerogear.org/ios/).
+
+## Demo apps
+
+Take a look in our demo apps:
+
+* [Two-Factor](https://github.com/aerogear/aerogear-ios-cookbook/blob/master/Two-Factor)
 
 ## Development
 
