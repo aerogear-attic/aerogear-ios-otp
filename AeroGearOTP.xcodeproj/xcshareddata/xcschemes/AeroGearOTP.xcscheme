@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F412E1D1AC3AA31388DBC2"
-               BuildableName = "libaerogear-otp.ios.a"
-               BlueprintName = "aerogear-otp.ios"
-               ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
+               BuildableName = "libAeroGearOTP.a"
+               BlueprintName = "AeroGearOTP"
+               ReferencedContainer = "container:AeroGearOTP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,12 +34,21 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81F41B0DE92C2117AB2F5685"
-               BuildableName = "aerogear-otp.iosTests.xctest"
-               BlueprintName = "aerogear-otp.iosTests"
-               ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
+               BuildableName = "AeroGearOTPTests.xctest"
+               BlueprintName = "AeroGearOTPTests"
+               ReferencedContainer = "container:AeroGearOTP.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "81F412E1D1AC3AA31388DBC2"
+            BuildableName = "libAeroGearOTP.a"
+            BlueprintName = "AeroGearOTP"
+            ReferencedContainer = "container:AeroGearOTP.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -58,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "81F412E1D1AC3AA31388DBC2"
-            BuildableName = "libaerogear-otp.ios.a"
-            BlueprintName = "aerogear-otp.ios"
-            ReferencedContainer = "container:aerogear-otp.ios.xcodeproj">
+            BuildableName = "libAeroGearOTP.a"
+            BlueprintName = "AeroGearOTP"
+            ReferencedContainer = "container:AeroGearOTP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,6 +81,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "81F412E1D1AC3AA31388DBC2"
+            BuildableName = "libAeroGearOTP.a"
+            BlueprintName = "AeroGearOTP"
+            ReferencedContainer = "container:AeroGearOTP.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
