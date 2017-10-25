@@ -7,7 +7,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/AeroGearOTP.svg)](https://cocoapods.org/pods/AeroGearOTP)
 [![Platform](https://img.shields.io/cocoapods/p/AeroGearOTP.svg)](https://cocoapods.org/pods/AeroGearOTP)
 
-One time passwords generating library according to [RFC 6238](http://tools.ietf.org/html/rfc6238).
+One time password generator library according to [RFC 6238](http://tools.ietf.org/html/rfc6238).
 
 |                 | Project Info                                 |
 | --------------- | -------------------------------------------- |
