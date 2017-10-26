@@ -2,6 +2,7 @@
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)
 [![circle-ci](https://img.shields.io/circleci/project/github/aerogear/aerogear-ios-otp/master.svg)](https://circleci.com/gh/aerogear/aerogear-ios-otp)
+[![codecov](https://codecov.io/gh/aerogear/aerogear-ios-otp/branch/master/graph/badge.svg)](https://codecov.io/gh/aerogear/aerogear-ios-otp)
 [![License](https://img.shields.io/badge/-Apache%202.0-blue.svg)](https://opensource.org/s/Apache-2.0)
 [![GitHub release](https://img.shields.io/github/release/aerogear/aerogear-ios-otp.svg)](https://github.com/aerogear/aerogear-ios-otp/releases)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AeroGearOTP.svg)](https://cocoapods.org/pods/AeroGearOTP)
@@ -13,7 +14,7 @@ One time password generator library according to [RFC 6238](http://tools.ietf.or
 | --------------- | -------------------------------------------- |
 | License:        | Apache License, Version 2.0                  |
 | Build:          | CocoaPods                                    |
-| Languague:      | Objective-C                                  |
+| Language:       | Objective-C                                  |
 | Documentation:  | http://aerogear.org/ios/                     |
 | Issue tracker:  | https://issues.jboss.org/browse/AGIOS        |
 | Mailing lists:  | [aerogear-users](http://aerogear-users.1116366.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-users))                            |

@@ -18,9 +18,9 @@ test:
         -destination "platform=iOS Simulator,name=${SIMULATOR},OS=${OS}"
         -workspace $XCODE_WORKSPACE
         -scheme $XCODE_SCHEME
-        clean build |
+        clean build test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
 
-  post: 
+  post:
     - bash <(curl -s https://codecov.io/bash)
