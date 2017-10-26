@@ -4,6 +4,7 @@ machine:
   environment:
     XCODE_WORKSPACE: "AeroGearOTP.xcworkspace"
     XCODE_SCHEME: "AeroGearOTP"
+    XCODE_SCHEME_TEST: "AeroGearOTPTests"
     SIMULATOR: "iPhone 7"
     OS: "11.0.1"
 
@@ -18,9 +19,22 @@ test:
         -destination "platform=iOS Simulator,name=${SIMULATOR},OS=${OS}"
         -workspace $XCODE_WORKSPACE
         -scheme $XCODE_SCHEME
-        clean build |
+        clean build test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
 
-  post: 
+    - set -o pipefail &&
+      xcodebuild
+        CODE_SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY=
+        PROVISIONING_PROFILE=
+        -sdk iphonesimulator
+        -destination "platform=iOS Simulator,name=${SIMULATOR},OS=${OS}"
+        -workspace $XCODE_WORKSPACE
+        -scheme $XCODE_SCHEME_TEST
+        test |
+      tee $CIRCLE_ARTIFACTS/xcode_raw.log |
+      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+
+  post:
     - bash <(curl -s https://codecov.io/bash)
