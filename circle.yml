@@ -2,15 +2,10 @@ machine:
   xcode:
     version: 9.0
   environment:
-    XCODE_WORKSPACE: "aerogear-otp.ios.xcworkspace"
-    XCODE_SCHEME: "aerogear-otp.ios"
+    XCODE_WORKSPACE: "AeroGearOTP.xcworkspace"
+    XCODE_SCHEME: "AeroGearOTP"
     SIMULATOR: "iPhone 7"
-    OS: "11.0"
-
-general:
-  branches:
-    ignore:
-      - /FH-v.*/ # Ignore release branches
+    OS: "11.0.1"
 
 test:
   override:
@@ -26,3 +21,6 @@ test:
         clean build |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+
+  post: 
+    - bash <(curl -s https://codecov.io/bash)

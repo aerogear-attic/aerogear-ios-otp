@@ -1,8 +1,8 @@
-project 'aerogear-otp.ios.xcodeproj'
+project 'AeroGearOTP.xcodeproj'
 
-platform :ios, '7.0'
+platform :ios, '9.0'
 
-target 'aerogear-otp.iosTests' do
-    pod 'OCMock', '2.2.3'
-    pod 'Kiwi', '2.3.0'
+target 'AeroGearOTPTests' do
+    pod 'OCMock', '3.4'
+    pod 'Kiwi', '2.4.0'
 end
