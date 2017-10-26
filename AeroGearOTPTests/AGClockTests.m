@@ -27,7 +27,7 @@
 NSDate *currentDate;
 
 - (void)setUp {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorianCalendar setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     NSDateComponents *dateComps = [[NSDateComponents alloc] init];
     [dateComps setCalendar:gregorianCalendar];
