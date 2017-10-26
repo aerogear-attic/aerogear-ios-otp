@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>aerogear-otp.ios.xcscheme</key>
+		<key>AeroGearOTP.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>aerogear-otp.iosTests.xcscheme</key>
+		<key>AeroGearOTPTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
