@@ -19,6 +19,8 @@ test:
         -destination "platform=iOS Simulator,name=${SIMULATOR},OS=${OS}"
         -workspace $XCODE_WORKSPACE
         -scheme $XCODE_SCHEME
+        GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
+        GCC_GENERATE_TEST_COVERAGE_FILES=YES
         clean build test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
@@ -32,6 +34,8 @@ test:
         -destination "platform=iOS Simulator,name=${SIMULATOR},OS=${OS}"
         -workspace $XCODE_WORKSPACE
         -scheme $XCODE_SCHEME_TEST
+        GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
+        GCC_GENERATE_TEST_COVERAGE_FILES=YES
         test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
